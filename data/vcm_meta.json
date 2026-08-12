@@ -1,0 +1,20 @@
+{
+  "dashboard_build_month": "August 2026",
+  "author": "Shubham Love",
+  "bctp_version": "v2026-06",
+  "bctp_release_month": "June 2026",
+  "project_count": 1907,
+  "mapped_project_count": 1162,
+  "unmapped_project_count": 745,
+  "source_geojson": "/content/drive/MyDrive/India_VCM_Full_AutoUpdate_v4/10_github_ready/data/vcm_data.geojson",
+  "boundary_source": "/content/drive/MyDrive/India_VCM_Full_AutoUpdate_v4/05_reference_boundaries/india_admin_boundaries_corrected.gpkg",
+  "schema_notes": {
+    "canonical_project_id": "BCTP project_id",
+    "geography": [
+      "resolved_state",
+      "resolved_district",
+      "resolved_location_source"
+    ],
+    "methodology": "Canonical Methodology / Protocol is the harmonized BCTP methodology field; registry methodology/version is supplemental."
+  }
+}
