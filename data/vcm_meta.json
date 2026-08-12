@@ -4,10 +4,10 @@
   "bctp_version": "v2026-06",
   "bctp_release_month": "June 2026",
   "project_count": 1907,
-  "mapped_project_count": 1162,
-  "unmapped_project_count": 745,
+  "mapped_project_count": 1293,
+  "unmapped_project_count": 614,
   "source_geojson_file": "vcm_data.geojson",
-  "boundary_source": "corrected boundary GeoPackage",
+  "boundary_source": "master corrected boundary GeoPackage",
   "schema_notes": {
     "canonical_project_id": "BCTP project_id",
     "geography": [
