@@ -1,0 +1,2263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://indiavcm.com/schema/vcm-project.schema.json",
+  "title": "India VCM Explorer Project Record",
+  "description": "Schema for project properties distributed by India VCM Explorer.",
+  "type": "object",
+  "properties": {
+    "1996": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1996."
+    },
+    "1996.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1996.1."
+    },
+    "1996.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1996.2."
+    },
+    "1996.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1996.3."
+    },
+    "1997": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1997."
+    },
+    "1997.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1997.1."
+    },
+    "1997.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1997.2."
+    },
+    "1997.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1997.3."
+    },
+    "1998": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1998."
+    },
+    "1998.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1998.1."
+    },
+    "1998.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1998.2."
+    },
+    "1998.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1998.3."
+    },
+    "1999": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1999."
+    },
+    "1999.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1999.1."
+    },
+    "1999.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1999.2."
+    },
+    "1999.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1999.3."
+    },
+    "1st issuance yr (no hard code, hide)": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "1st issuance yr (no hard code, hide)."
+    },
+    "2000": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2000."
+    },
+    "2000.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2000.1."
+    },
+    "2000.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2000.2."
+    },
+    "2000.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2000.3."
+    },
+    "2001": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2001."
+    },
+    "2001.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2001.1."
+    },
+    "2001.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2001.2."
+    },
+    "2001.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2001.3."
+    },
+    "2002": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2002."
+    },
+    "2002.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2002.1."
+    },
+    "2002.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2002.2."
+    },
+    "2002.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2002.3."
+    },
+    "2003": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2003."
+    },
+    "2003.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2003.1."
+    },
+    "2003.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2003.2."
+    },
+    "2003.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2003.3."
+    },
+    "2004": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2004."
+    },
+    "2004.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2004.1."
+    },
+    "2004.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2004.2."
+    },
+    "2004.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2004.3."
+    },
+    "2005": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2005."
+    },
+    "2005.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2005.1."
+    },
+    "2005.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2005.2."
+    },
+    "2005.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2005.3."
+    },
+    "2006": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2006."
+    },
+    "2006.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2006.1."
+    },
+    "2006.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2006.2."
+    },
+    "2006.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2006.3."
+    },
+    "2007": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2007."
+    },
+    "2007.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2007.1."
+    },
+    "2007.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2007.2."
+    },
+    "2007.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2007.3."
+    },
+    "2008": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2008."
+    },
+    "2008.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2008.1."
+    },
+    "2008.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2008.2."
+    },
+    "2008.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2008.3."
+    },
+    "2009": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2009."
+    },
+    "2009.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2009.1."
+    },
+    "2009.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2009.2."
+    },
+    "2009.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2009.3."
+    },
+    "2010": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2010."
+    },
+    "2010.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2010.1."
+    },
+    "2010.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2010.2."
+    },
+    "2010.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2010.3."
+    },
+    "2011": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2011."
+    },
+    "2011.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2011.1."
+    },
+    "2011.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2011.2."
+    },
+    "2011.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2011.3."
+    },
+    "2012": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2012."
+    },
+    "2012.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2012.1."
+    },
+    "2012.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2012.2."
+    },
+    "2012.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2012.3."
+    },
+    "2013": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2013."
+    },
+    "2013.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2013.1."
+    },
+    "2013.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2013.2."
+    },
+    "2013.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2013.3."
+    },
+    "2014": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2014."
+    },
+    "2014.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2014.1."
+    },
+    "2014.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2014.2."
+    },
+    "2014.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2014.3."
+    },
+    "2015": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2015."
+    },
+    "2015.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2015.1."
+    },
+    "2015.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2015.2."
+    },
+    "2015.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2015.3."
+    },
+    "2016": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2016."
+    },
+    "2016.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2016.1."
+    },
+    "2016.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2016.2."
+    },
+    "2016.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2016.3."
+    },
+    "2017": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2017."
+    },
+    "2017.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2017.1."
+    },
+    "2017.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2017.2."
+    },
+    "2017.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2017.3."
+    },
+    "2018": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2018."
+    },
+    "2018.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2018.1."
+    },
+    "2018.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2018.2."
+    },
+    "2018.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2018.3."
+    },
+    "2019": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2019."
+    },
+    "2019.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2019.1."
+    },
+    "2019.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2019.2."
+    },
+    "2019.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2019.3."
+    },
+    "2020": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2020."
+    },
+    "2020.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2020.1."
+    },
+    "2020.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2020.2."
+    },
+    "2020.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2020.3."
+    },
+    "2021": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2021."
+    },
+    "2021.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2021.1."
+    },
+    "2021.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2021.2."
+    },
+    "2021.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2021.3."
+    },
+    "2022": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2022."
+    },
+    "2022.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2022.1."
+    },
+    "2022.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2022.2."
+    },
+    "2022.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2022.3."
+    },
+    "2023": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2023."
+    },
+    "2023.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2023.1."
+    },
+    "2023.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2023.2."
+    },
+    "2023.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2023.3."
+    },
+    "2024": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2024."
+    },
+    "2024.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2024.1."
+    },
+    "2024.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2024.2."
+    },
+    "2024.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2024.3."
+    },
+    "2025": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2025."
+    },
+    "2025.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2025.1."
+    },
+    "2025.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2025.2."
+    },
+    "2025.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2025.3."
+    },
+    "2026": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2026."
+    },
+    "2026.1": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2026.1."
+    },
+    "2026.2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2026.2."
+    },
+    "2026.3": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "2026.3."
+    },
+    "ARB / WA \nProject": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Arb / wa \nproject."
+    },
+    "ARB / WA ID": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Arb / wa id."
+    },
+    "ARB / WA Status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Arb / wa status."
+    },
+    "Registry / ARB / WA": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Registry / arb / wa."
+    },
+    "Unnamed: 169": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Unnamed: 169."
+    },
+    "_merge_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Merge id."
+    },
+    "_registry_for_merge": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Registry for merge."
+    },
+    "_registry_pipeline_match": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Registry pipeline match."
+    },
+    "bctp_date_added": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Bctp date added."
+    },
+    "bctp_notes": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Bctp notes."
+    },
+    "bctp_project_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Bctp project id."
+    },
+    "bctp_site_location": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Bctp site location."
+    },
+    "bctp_state": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Bctp state."
+    },
+    "broad_kml_fix_reason": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Broad kml fix reason."
+    },
+    "broad_kml_not_site_specific": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Broad kml not site specific."
+    },
+    "buffer_credits_released": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Buffer credits released."
+    },
+    "buffer_pool_deposits": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Buffer pool deposits."
+    },
+    "certifications": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Certifications."
+    },
+    "coord_api_trust_level": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coord api trust level."
+    },
+    "coord_correction_applied": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coord correction applied."
+    },
+    "coord_final_lat": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord final lat."
+    },
+    "coord_final_lon": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord final lon."
+    },
+    "coord_geocoded_precision": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coord geocoded precision."
+    },
+    "coord_original_source": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coord original source."
+    },
+    "coord_source_api_lat": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord source api lat."
+    },
+    "coord_source_api_lat_corrected": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord source api lat corrected."
+    },
+    "coord_source_api_lon": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord source api lon."
+    },
+    "coord_source_api_lon_corrected": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord source api lon corrected."
+    },
+    "coord_source_geocoded_lat": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord source geocoded lat."
+    },
+    "coord_source_geocoded_lon": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Coord source geocoded lon."
+    },
+    "coord_text_matched_district": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coord text matched district."
+    },
+    "coord_text_matched_state": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coord text matched state."
+    },
+    "coordinate_quality": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coordinate quality."
+    },
+    "coordinate_source": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coordinate source."
+    },
+    "coordinate_use_note": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Coordinate use note."
+    },
+    "country": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Country."
+    },
+    "credits_issued": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Cumulative carbon credits issued, in tCO2e where reported."
+    },
+    "credits_remaining": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Credits remaining where available or derivable from reported totals."
+    },
+    "credits_retired": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Cumulative carbon credits retired, in tCO2e where reported."
+    },
+    "date_registered": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Project registration date where available."
+    },
+    "emissions_disagreement_tier": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Comparison category for paired BCTP and registry annual emissions estimates."
+    },
+    "emissions_pct_diff": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Emissions pct diff."
+    },
+    "est_annual_emissions_bctp": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Est annual emissions bctp."
+    },
+    "est_annual_emissions_gold_raw": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Est annual emissions gold raw."
+    },
+    "est_annual_emissions_verra_raw": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Est annual emissions verra raw."
+    },
+    "first_vintage_year": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "First reported credit vintage year."
+    },
+    "geometry_source": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Source or method used for the displayed project geometry."
+    },
+    "geometry_source_archival": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Geometry source archival."
+    },
+    "gold_carbon_stream": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold carbon stream."
+    },
+    "gold_crediting_period_end": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold crediting period end."
+    },
+    "gold_crediting_period_start": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold crediting period start."
+    },
+    "gold_internal_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold internal id."
+    },
+    "gold_poa_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold poa status."
+    },
+    "gold_project_size": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold project size."
+    },
+    "gold_raw_name": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold raw name."
+    },
+    "gold_raw_type": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Gold raw type."
+    },
+    "gold_sustaincert_id": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Gold sustaincert id."
+    },
+    "iso_detected_districts": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Iso detected districts."
+    },
+    "iso_detected_states": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Iso detected states."
+    },
+    "iso_resolution_evidence": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Iso resolution evidence."
+    },
+    "iso_resolution_method": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Iso resolution method."
+    },
+    "iso_resolution_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Iso resolution status."
+    },
+    "kml_accepted_document_ids": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml accepted document ids."
+    },
+    "kml_area_km2": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Kml area km2."
+    },
+    "kml_bad_document_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Kml bad document count."
+    },
+    "kml_bbox_diagonal_km": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Kml bbox diagonal km."
+    },
+    "kml_broad_document_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Kml broad document count."
+    },
+    "kml_coordinate_quality": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml coordinate quality."
+    },
+    "kml_coordinate_source": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml coordinate source."
+    },
+    "kml_document_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Kml document count."
+    },
+    "kml_document_ids": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml document ids."
+    },
+    "kml_document_names": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml document names."
+    },
+    "kml_geometry_applied": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Kml geometry applied."
+    },
+    "kml_geometry_type": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml geometry type."
+    },
+    "kml_good_document_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Kml good document count."
+    },
+    "kml_mapping_resolution": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Kml mapping resolution."
+    },
+    "kml_review_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "Kml review flag."
+    },
+    "map_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Map status."
+    },
+    "mapping_resolution": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Mapping resolution."
+    },
+    "methodology": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Primary harmonized methodology or protocol field."
+    },
+    "methodology_pre_harmonization": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Methodology pre harmonization."
+    },
+    "methodology_version": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Methodology version."
+    },
+    "pers_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Pers count."
+    },
+    "poa_aggregate_id": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Poa aggregate id."
+    },
+    "poa_project_id": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Poa project id."
+    },
+    "poa_project_name": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Poa project name."
+    },
+    "poa_project_sustaincert_id": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Poa project sustaincert id."
+    },
+    "poa_vpa_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Poa vpa status."
+    },
+    "project_description": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Project description available in the source data."
+    },
+    "project_developer": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Project developer or proponent name where available."
+    },
+    "project_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Canonical project identifier used by India VCM Explorer."
+    },
+    "project_name": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Public project name."
+    },
+    "project_subtype": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "More granular project subtype where available."
+    },
+    "project_type": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Project type where available."
+    },
+    "reduction_or_removal": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Reduction or removal."
+    },
+    "region": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Region."
+    },
+    "registry": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Carbon-credit registry grouping used by the project inventory."
+    },
+    "registry_project_id": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Registry-specific project identifier when separately available."
+    },
+    "registry_project_id_normalized": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Registry project id normalized."
+    },
+    "registry_url": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Public registry URL associated with the project."
+    },
+    "resolved_district": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Administrative district associated with the project when defensibly resolved."
+    },
+    "resolved_location_source": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Provenance of the resolved administrative location."
+    },
+    "resolved_state": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Administrative state or union territory associated with the project."
+    },
+    "reversals_covered_by_buffer": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Reversals covered by buffer."
+    },
+    "reversals_not_covered_by_buffer": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Reversals not covered by buffer."
+    },
+    "scope": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Broad project category."
+    },
+    "state": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "State."
+    },
+    "status_bctp_snapshot": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Status bctp snapshot."
+    },
+    "status_gold_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Status gold current."
+    },
+    "status_verra_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Status verra current."
+    },
+    "sustaincert_id_str": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Sustaincert id str."
+    },
+    "verifier": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verifier or validation/verification entity where available."
+    },
+    "verra_account_name": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra account name."
+    },
+    "verra_candidate_points": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra candidate points."
+    },
+    "verra_credit_period_info": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra credit period info."
+    },
+    "verra_document_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Verra document count."
+    },
+    "verra_internal_project_id": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Verra internal project id."
+    },
+    "verra_kml_name": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra kml name."
+    },
+    "verra_kml_uri": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra kml uri."
+    },
+    "verra_methodology_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra methodology current."
+    },
+    "verra_primary_category": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra primary category."
+    },
+    "verra_project_description": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra project description."
+    },
+    "verra_project_document_count": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Verra project document count."
+    },
+    "verra_project_end_date": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra project end date."
+    },
+    "verra_project_name_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra project name current."
+    },
+    "verra_project_proponent": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra project proponent."
+    },
+    "verra_project_start_date": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra project start date."
+    },
+    "verra_protocol_code": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra protocol code."
+    },
+    "verra_public_comment_url": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra public comment url."
+    },
+    "verra_public_url": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra public url."
+    },
+    "verra_registration_date": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Verra registration date."
+    },
+    "verra_sectoral_scope_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra sectoral scope current."
+    },
+    "verra_status_code_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra status code current."
+    },
+    "verra_status_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra status current."
+    },
+    "verra_total_issued_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra total issued current."
+    },
+    "verra_total_retired_current": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra total retired current."
+    },
+    "verra_validator": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra validator."
+    },
+    "verra_verifier": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Verra verifier."
+    },
+    "web_lite_mapping_status": {
+      "type": [
+        "string",
+        "number",
+        "boolean",
+        "array",
+        "object",
+        "null"
+      ],
+      "description": "Web lite mapping status."
+    }
+  },
+  "required": [
+    "project_id",
+    "project_name",
+    "registry"
+  ],
+  "additionalProperties": true
+}
