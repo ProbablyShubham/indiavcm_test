@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://indiavcm.com/schema/news-feed.schema.json",
+  "title": "India VCM Explorer news feed (news.json)",
+  "description": "Contract between the indiavcm-news pipeline and this site. Headlines, sources, timestamps and links only — never article text.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "window_days": {
+      "type": "integer"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "source",
+          "published",
+          "geo"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable hash of the canonical URL."
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source": {
+            "type": "string",
+            "description": "Publisher name, for attribution."
+          },
+          "published": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "summary": {
+            "type": "string",
+            "description": "Short RSS-supplied snippet. Optional."
+          },
+          "geo": {
+            "type": "object",
+            "required": [
+              "level",
+              "method"
+            ],
+            "properties": {
+              "level": {
+                "enum": [
+                  "district",
+                  "state",
+                  "national",
+                  "unresolved"
+                ]
+              },
+              "district": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lat": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "lon": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "method": {
+                "type": "string",
+                "description": "gazetteer_exact | gazetteer_alias | state_only | none"
+              },
+              "confidence": {
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              }
+            }
+          },
+          "terms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

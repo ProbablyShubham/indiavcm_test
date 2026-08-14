@@ -1,12 +1,7 @@
 {
-  "status": "baseline",
-  "baseline_month": "2026-08",
-  "summary": {
-    "new_projects": 0,
-    "removed_projects": 0,
-    "status_changes": 0,
-    "issuance_change": 0,
-    "retirement_change": 0
-  },
-  "changes": []
+  "current_month": "2026-08",
+  "previous_month": null,
+  "added": [],
+  "removed": [],
+  "changed": []
 }
