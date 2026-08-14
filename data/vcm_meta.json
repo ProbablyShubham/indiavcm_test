@@ -10,7 +10,7 @@
   "unmapped_project_count": 614,
   "source_geojson_file": "vcm_data.geojson",
   "boundary_source": "master corrected boundary GeoPackage",
-  "schema_version": "7.1",
+  "schema_version": "8.0",
   "features": [
     "permanent project/methodology/entity routes",
     "Boolean and scoped search",
@@ -23,6 +23,7 @@
     "client-side GIS workspace",
     "private local vector/raster layers",
     "spatial selection",
-    "dedicated mobile explorer"
+    "dedicated mobile explorer",
+    "quiet analyst design system"
   ]
 }
