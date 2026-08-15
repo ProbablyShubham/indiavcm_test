@@ -683,6 +683,89 @@ body.desktop-site .app{height:100dvh;min-height:0;overflow:hidden}body.desktop-s
 @media(max-width:1180px){.market-overview{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(170px,1fr)}.market-stat-credits{min-width:270px}}
 @media(max-width:820px){body.mobile-site .market-overview{display:flex;gap:7px;padding:7px 9px;overflow-x:auto}body.mobile-site .market-stat{flex:0 0 178px;min-height:76px}body.mobile-site .market-stat-credits{flex-basis:245px}.author-link{padding:0 7px;font-size:10px}body.mobile-site .news-layout{height:auto;min-height:0;overflow:visible;display:flex;flex-direction:column}body.mobile-site .news-list{height:auto;max-height:48dvh;overflow:auto;flex:none}body.mobile-site #newsMap{height:42dvh;min-height:300px;flex:none}body.mobile-site .legend{display:none!important}body.mobile-site .legend.mobile-open{display:block!important;max-height:45vh;overflow:auto}body.mobile-site .legend-toggle-mobile{display:inline-flex;position:absolute;right:12px;bottom:14px;z-index:655;border:1px solid var(--border);border-radius:999px;background:var(--surface);padding:6px 9px;font-size:10px;box-shadow:var(--shadow-2)}body.mobile-site .filter-rail{transform:translateY(110%)}body.mobile-site .app.sheet-open .filter-rail{transform:none}body.mobile-site .multi-options{max-height:180px}.news-boundary-filter{flex:1}.news-boundary-filter select{width:100%;max-width:none}}
 
+/* ==========================================================================\n   v9.4 final polish\n   ========================================================================== */
+
+/* Workspace is a map-first analysis surface. The map always owns the full canvas;
+   the analyst controls float above it and scroll independently. */
+body.desktop-site.workspace-mode .market-overview,
+body.desktop-site.workspace-mode .chipbar,
+body.desktop-site.workspace-mode #panel-map .map-toolbar,
+body.desktop-site.workspace-mode .filter-rail,
+body.desktop-site.workspace-mode .rail-toggle{display:none!important}
+body.desktop-site.workspace-mode #panel-map{position:relative;overflow:hidden!important}
+body.desktop-site.workspace-mode #panel-map .map-body{position:relative!important;display:block!important;height:100%!important;min-height:0!important;overflow:hidden!important}
+body.desktop-site.workspace-mode #map{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;border:0!important}
+body.desktop-site.workspace-mode .workspace-console{
+  display:flex!important;position:absolute!important;left:14px;top:14px;bottom:14px;
+  width:min(420px,calc(100% - 72px));height:auto!important;z-index:650;
+  border:1px solid var(--border)!important;border-radius:14px;background:var(--surface);
+  box-shadow:var(--shadow-3);overflow:hidden;transition:transform .18s var(--ease),opacity .18s var(--ease)
+}
+body.desktop-site.workspace-mode .workspace-scroll{flex:1!important;min-height:0!important;overflow-y:auto!important;overscroll-behavior:contain;padding-bottom:34px}
+body.desktop-site.workspace-mode.workspace-tools-collapsed .workspace-console{transform:translateX(calc(-100% - 28px));opacity:0;pointer-events:none}
+.workspace-tools-toggle,.workspace-fullscreen-toggle{
+  display:none;position:absolute;z-index:670;height:36px;border:1px solid var(--border);
+  border-radius:9px;background:var(--surface);box-shadow:var(--shadow-2);color:var(--ink-2);
+  padding:0 11px;font-size:10.5px;font-weight:700
+}
+body.desktop-site.workspace-mode .workspace-tools-toggle,
+body.desktop-site.workspace-mode .workspace-fullscreen-toggle{display:inline-flex;align-items:center;gap:6px}
+body.desktop-site.workspace-mode .workspace-tools-toggle{left:448px;top:16px}
+body.desktop-site.workspace-mode.workspace-tools-collapsed .workspace-tools-toggle{left:16px}
+body.desktop-site.workspace-mode .workspace-fullscreen-toggle{right:58px;top:16px}
+.workspace-tools-toggle:hover,.workspace-fullscreen-toggle:hover{border-color:var(--pacific);color:var(--pacific-deep)}
+.workspace-head{padding-right:12px}.layer-drop{width:100%;min-height:74px;text-align:left}.layer-drop span{display:block;margin-top:4px}
+
+/* Keep map controls away from attribution/scale/notices. */
+#map .leaflet-top.leaflet-right{top:8px;right:8px}
+#map .leaflet-control-zoom{box-shadow:var(--shadow-2)}
+#map .leaflet-bottom.leaflet-left{left:8px;bottom:8px}
+#map .leaflet-control-scale{margin-left:0!important;margin-bottom:0!important}
+#unmappedNotice{left:92px!important;bottom:9px!important;max-width:min(360px,48vw)}
+body.desktop-site.workspace-mode #unmappedNotice{left:16px!important;bottom:16px!important}
+body.desktop-site.workspace-mode:not(.workspace-tools-collapsed) #unmappedNotice{left:450px!important}
+
+/* Mobile legend: leave the toggle visible after opening so the same control closes it. */
+body.mobile-site .legend.mobile-open{right:10px!important;bottom:58px!important;max-height:42vh!important;overflow:auto!important}
+body.mobile-site .legend-toggle-mobile{min-width:78px;justify-content:center}
+body.mobile-site .legend-toggle-mobile[aria-expanded="true"]{background:var(--charcoal)!important;color:#fff!important;border-color:var(--charcoal)!important}
+
+/* Vintage bars expose the numerical magnitude directly on hover/focus. */
+.vintage-mini{overflow:visible}.vintage-mini-bars{height:158px!important;padding-top:30px!important;overflow-x:auto!important;overflow-y:visible!important}
+.vintage-bar{overflow:visible!important}.vintage-bar::after{
+  content:attr(data-tip);position:absolute;top:-27px;left:50%;transform:translateX(-50%) translateY(3px);
+  opacity:0;pointer-events:none;white-space:nowrap;padding:4px 6px;border-radius:6px;
+  background:var(--charcoal);color:#fff;font:600 9px/1.2 var(--font-body);box-shadow:var(--shadow-2);
+  transition:opacity .12s,transform .12s;z-index:4
+}
+.vintage-bar:hover::after,.vintage-bar:focus-visible::after,.vintage-bar.on::after{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Methodology/developer explorers use visible intelligence cards rather than a long list. */
+.intel-profile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:12px}
+.intel-profile-card{appearance:none;width:100%;min-height:128px;padding:13px;border:1px solid var(--border);border-radius:11px;background:var(--surface);box-shadow:var(--shadow-1);text-align:left;color:var(--ink);cursor:pointer;transition:transform .14s var(--ease),border-color .14s var(--ease),box-shadow .14s var(--ease)}
+.intel-profile-card:hover,.intel-profile-card:focus-visible{transform:translateY(-2px);border-color:var(--pacific);box-shadow:var(--shadow-2);outline:none}
+.intel-profile-card h4{font:650 13px/1.35 var(--font-display);margin:0 0 10px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.intel-profile-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.intel-profile-metrics span{padding:6px 7px;border-radius:7px;background:var(--surface-2);font-size:9.5px;color:var(--ink-3)}
+.intel-profile-metrics b{display:block;margin-top:1px;color:var(--ink);font-family:var(--font-mono);font-size:11px}
+.intel-profile-foot{margin-top:8px;color:var(--pacific-deep);font-size:10px;font-weight:700}
+@media(max-width:1120px){.intel-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.intel-profile-grid{grid-template-columns:1fr}}
+
+/* Fullscreen Workspace uses every browser pixel while preserving the floating console. */
+:fullscreen body.desktop-site.workspace-mode .app,
+:-webkit-full-screen body.desktop-site.workspace-mode .app{height:100vh!important}
+:fullscreen body.desktop-site.workspace-mode header.app-header,
+:fullscreen body.desktop-site.workspace-mode nav.tabbar,
+:fullscreen body.desktop-site.workspace-mode .market-overview,
+:fullscreen body.desktop-site.workspace-mode .chipbar,
+:-webkit-full-screen body.desktop-site.workspace-mode header.app-header,
+:-webkit-full-screen body.desktop-site.workspace-mode nav.tabbar{display:none!important}
+:fullscreen body.desktop-site.workspace-mode main.panels,
+:fullscreen body.desktop-site.workspace-mode #panel-map,
+:-webkit-full-screen body.desktop-site.workspace-mode main.panels,
+:-webkit-full-screen body.desktop-site.workspace-mode #panel-map{height:100vh!important;min-height:100vh!important}
+
 </style>
 
 </head>
@@ -2939,6 +3022,101 @@ const _drawRestoredChartsV93=drawRestoredCharts;drawRestoredCharts=function(){_d
 
 function initAbout(){const m=VCM.meta||{},cite='Pamela Quartson, Barbara K Haya, Tyler Bernard, Aline Abayo, Xinyun Rong, Ivy S So, Micah Elias. (2026). Voluntary Registry Offsets Database v2026-06, Berkeley Carbon Trading Project, University of California, Berkeley. Retrieved from: https://gspp.berkeley.edu/berkeley-carbon-trading-project/offsets-database.';$('#aboutRoot').innerHTML='<div class="page-head"><span class="eyebrow">Open market intelligence</span><h1>About India VCM Explorer</h1><p>India VCM Explorer is an open-access geospatial market intelligence platform for India’s voluntary carbon market (VCM), carbon offset projects, registries, methodologies, developers, geography, issuance and retirement activity.</p></div><div class="grid cols-2"><div class="card"><h3>Explore India’s voluntary carbon market</h3><p class="card-note">Search and analyze projects by registry, category, methodology, developer, state, district, vintage, issuance and retirement activity. Geographic precision is preserved rather than hidden.</p></div><div class="card"><h3>Analysis Workspace</h3><p class="card-note">Desktop Workspace supports location-quality controls, spatial selection, private local GIS layers and reproducible exports. Local files stay in the browser.</p></div><div class="card"><h3>Dataset methodology & required source citation</h3><p class="card-note">The project universe is anchored to the Berkeley Carbon Trading Project voluntary registry offsets database and enriched with public registry information where available.</p><p class="license-note"><b>Berkeley Carbon Trading Project citation:</b><br>'+esc(cite)+'</p><p class="card-note">Dataset build: <b>'+esc(m.build_date||'—')+'</b> · Registry release: <b>'+esc(m.bctp_version||'—')+'</b>.</p></div><div class="card"><h3>Maintainer</h3><p class="card-note"><a href="https://www.linkedin.com/in/shubhamlove/" target="_blank" rel="me noopener"><b>Shubham Love</b></a> is an environmental policy analyst and a graduate from the University of Pennsylvania.</p><p class="card-note">India VCM Explorer is developed and maintained by Shubham Love.</p></div><div class="card"><h3>Open data & attribution</h3><p class="card-note">Reuse, redistribution and derivative works are permitted, including commercial use, but attribution is compulsory. Original dataset/site content is made available under CC BY 4.0 to the extent rights are held by the publisher; underlying source materials retain their own terms and required citations. Software is distributed under the BSD 3-Clause License with copyright/license notices retained.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn" href="'+sitePath('data/vcm_data.csv')+'" download>CSV</a><a class="btn" href="'+sitePath('data/vcm_data.geojson')+'" download>GeoJSON</a><a class="btn" href="'+sitePath('DATA_LICENSE.md')+'" target="_blank">Attribution terms</a></div></div><div class="card"><h3>Suggested India VCM Explorer citation</h3><p class="card-note">'+esc(VCM.cfg.author||'Shubham Love')+', <em>India VCM Explorer</em>, '+esc(m.build_date||'')+', '+esc(VCM.cfg.siteUrl||'')+'.</p></div></div>';}
 PANEL_INIT.about={fn:initAbout};
+
+let V94_MAIN_ZOOM=null;
+function positionMainMapControls(){
+  if(!MAP)return;
+  document.querySelectorAll('#map .leaflet-control-zoom').forEach(el=>el.remove());
+  if(!V94_MAIN_ZOOM)V94_MAIN_ZOOM=L.control.zoom({position:'topright'}).addTo(MAP);
+}
+
+function wireMobileLegendV94(){
+  if(!document.body.classList.contains('mobile-site'))return;
+  const legend=$('#legend'),btn=$('#mobileLegendToggle');
+  if(!legend||!btn)return;
+  btn.setAttribute('aria-controls','legend');
+  const setState=open=>{
+    legend.classList.toggle('mobile-open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+    btn.textContent=open?'Close legend':'Legend';
+  };
+  setState(legend.classList.contains('mobile-open'));
+  btn.onclick=e=>{e.preventDefault();e.stopPropagation();setState(!legend.classList.contains('mobile-open'));};
+}
+
+function ensureWorkspaceChromeV94(){
+  const map=$('#map'); if(!map||document.body.classList.contains('mobile-site'))return;
+  let tools=$('#workspaceToolsToggle');
+  if(!tools){
+    tools=document.createElement('button');tools.id='workspaceToolsToggle';tools.className='workspace-tools-toggle';tools.type='button';
+    map.parentElement.appendChild(tools);
+  }
+  let full=$('#workspaceFullscreenToggle');
+  if(!full){
+    full=document.createElement('button');full.id='workspaceFullscreenToggle';full.className='workspace-fullscreen-toggle';full.type='button';
+    full.textContent='Full screen';map.parentElement.appendChild(full);
+  }
+  const sync=()=>{const collapsed=document.body.classList.contains('workspace-tools-collapsed');tools.textContent=collapsed?'Show tools':'Hide tools';tools.setAttribute('aria-expanded',collapsed?'false':'true');};
+  tools.onclick=()=>{document.body.classList.toggle('workspace-tools-collapsed');sync();setTimeout(()=>MAP&&MAP.invalidateSize(),190);};
+  full.onclick=async()=>{
+    try{
+      if(!document.fullscreenElement){await document.documentElement.requestFullscreen();full.textContent='Exit full screen';}
+      else{await document.exitFullscreen();full.textContent='Full screen';}
+    }catch(e){toast('Browser full-screen mode is unavailable here.');}
+  };
+  document.addEventListener('fullscreenchange',()=>{full.textContent=document.fullscreenElement?'Exit full screen':'Full screen';setTimeout(()=>MAP&&MAP.invalidateSize(),80);},{passive:true});
+  sync();
+}
+
+const _initMapV94Base=initMap;
+initMap=async function(){
+  await _initMapV94Base();
+  positionMainMapControls();
+  wireMobileLegendV94();
+  ensureWorkspaceChromeV94();
+};
+
+const _showTabV94Base=showTab;
+showTab=function(tab,opts){
+  _showTabV94Base(tab,opts);
+  if(tab!=='workspace')document.body.classList.remove('workspace-tools-collapsed');
+  if(tab==='workspace')ensureWorkspaceChromeV94();
+  wireMobileLegendV94();
+  setTimeout(()=>{if(MAP&&(tab==='map'||tab==='workspace')){positionMainMapControls();MAP.invalidateSize();}},100);
+};
+
+/* Make vintage values unmissable: native title + immediate custom tooltip + readout. */
+const _sparklineV94Base=sparkline;
+sparkline=function(series){
+  const html=_sparklineV94Base(series);
+  if(!html)return html;
+  return html.replace(/data-value="([^"]+)" title="([^"]+)"/g,(m,val,title)=>'data-value="'+val+'" data-tip="'+title.replace(/ credits$/,' tCO₂e')+'" title="'+title+'" aria-label="'+title+'"');
+};
+
+function profileCardStats(kind,name){
+  const fn=kind==='methodologies'?p=>get(p,'methodology'):p=>get(p,'developer');
+  const list=filtered().filter(p=>String(fn(p)||'')===name);
+  const issued=list.reduce((s,p)=>s+(p._issued||0),0),retired=list.reduce((s,p)=>s+(p._retired||0),0);
+  return {list,n:list.length,issued,retired,states:new Set(list.map(p=>p._state).filter(Boolean)).size,rate:issued>0?100*retired/issued:0};
+}
+
+renderInsights=function(){
+  const root=$('#insightsRoot');if(!root)return;
+  document.querySelectorAll('[data-insight]').forEach(b=>b.classList.toggle('on',b.dataset.insight===VCM.workspace.insight));
+  if(VCM.workspace.insight==='compare'){
+    root.innerHTML='<div class="insight-grid">'+renderComparison()+'</div>';
+    root.querySelectorAll('[data-remove-compare]').forEach(b=>b.onclick=()=>{VCM.workspace.compareIds.delete(b.dataset.removeCompare);renderInsights();});return;
+  }
+  if(VCM.workspace.insight==='quality'){root.innerHTML='<div class="insight-grid">'+qualityHtml()+'</div>';return;}
+  const kind=VCM.workspace.insight,rows=profileRows(kind);
+  const cards=rows.slice(0,120).map(([name])=>{const s=profileCardStats(kind,name);return '<button class="intel-profile-card" type="button" data-group="'+esc(name)+'"><h4>'+esc(name)+'</h4><div class="intel-profile-metrics"><span>Projects<b>'+fmtInt(s.n)+'</b></span><span>Issued<b>'+fmtCompact(s.issued)+'</b></span><span>States<b>'+fmtInt(s.states)+'</b></span><span>Retired<b>'+s.rate.toFixed(1)+'%</b></span></div><div class="intel-profile-foot">Open portfolio →</div></button>';}).join('');
+  root.innerHTML='<div class="insight-grid"><div class="insight-card full"><h3>'+(kind==='methodologies'?'Methodology explorer':'Developer / entity explorer')+'</h3><p class="card-note">Browse the market as portfolios. Each card opens the connected projects, geography, issuance and comparison actions.</p><div class="intel-profile-grid">'+cards+'</div></div></div>';
+  root.querySelectorAll('[data-group]').forEach(b=>b.onclick=()=>openGroup(kind,b.dataset.group));
+};
+
+/* If the legend was open on mobile, closing a project detail should not trap it open. */
+const _closeDetailV94Base=closeDetail;
+closeDetail=function(){_closeDetailV94Base();wireMobileLegendV94();};
 
 </script>
 </body>
