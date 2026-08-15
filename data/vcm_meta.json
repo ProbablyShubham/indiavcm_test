@@ -1,5 +1,5 @@
 {
-  "build_date": "2026-08-14",
+  "build_date": "2026-08-15",
   "build_month": "2026-08",
   "bctp_version": "unversioned",
   "project_count": 1907,
@@ -65,5 +65,6 @@
     2026
   ],
   "license": "CC BY 4.0",
-  "news_feed": "https://shubhamlove.github.io/indiavcm-news/"
+  "news_feed": "https://probablyshubham.github.io/indiavcm_news/",
+  "news_feed_fallback": "https://raw.githubusercontent.com/ProbablyShubham/indiavcm_news/main/"
 }

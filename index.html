@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#58a4b0" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1a1f29" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://indiavcm.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%2358a4b0' d='M32 4C21.5 4 13 12.5 13 23c0 14.6 19 37 19 37s19-22.4 19-37C51 12.5 42.5 4 32 4z'/%3E%3Ccircle fill='white' cx='32' cy='23' r='7'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="India VCM Explorer">
 <meta property="og:title" content="India VCM Explorer">
@@ -18,7 +19,7 @@
 <meta name="twitter:description" content="Open, project-level data for India&#x27;s voluntary carbon market. Map every registered carbon offset project by registry, category, developer, methodology, geography and credit issuance — with the provenance of every location shown, not hidden.">
 
 <link rel="manifest" href="site.webmanifest">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://indiavcm.com/#website", "url": "https://indiavcm.com/", "name": "India VCM Explorer", "description": "Open, project-level data for India's voluntary carbon market. Map every registered carbon offset project by registry, category, developer, methodology, geography and credit issuance — with the provenance of every location shown, not hidden."}, {"@type": "Dataset", "@id": "https://indiavcm.com/#dataset", "name": "India Voluntary Carbon Market Project Dataset", "description": "Open, project-level data for India's voluntary carbon market. Map every registered carbon offset project by registry, category, developer, methodology, geography and credit issuance — with the provenance of every location shown, not hidden.", "url": "https://indiavcm.com/data/", "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Person", "name": "Shubham Love", "url": "https://www.linkedin.com/in/shubhamlove/"}, "spatialCoverage": {"@type": "Place", "name": "India"}, "dateModified": "2026-08-14", "version": "unversioned", "isAccessibleForFree": true, "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://indiavcm.com/data/vcm_data.csv"}, {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://indiavcm.com/data/vcm_data.geojson"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://indiavcm.com/#website", "url": "https://indiavcm.com/", "name": "India VCM Explorer", "description": "Open, project-level data for India's voluntary carbon market. Map every registered carbon offset project by registry, category, developer, methodology, geography and credit issuance — with the provenance of every location shown, not hidden."}, {"@type": "Dataset", "@id": "https://indiavcm.com/#dataset", "name": "India Voluntary Carbon Market Project Dataset", "description": "Open, project-level data for India's voluntary carbon market. Map every registered carbon offset project by registry, category, developer, methodology, geography and credit issuance — with the provenance of every location shown, not hidden.", "url": "https://indiavcm.com/data/", "license": "https://creativecommons.org/licenses/by/4.0/", "creator": {"@type": "Person", "name": "Shubham Love", "url": "https://www.linkedin.com/in/shubhamlove/"}, "spatialCoverage": {"@type": "Place", "name": "India"}, "dateModified": "2026-08-15", "version": "unversioned", "isAccessibleForFree": true, "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://indiavcm.com/data/vcm_data.csv"}, {"@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://indiavcm.com/data/vcm_data.geojson"}]}]}</script>
 
 <script>
 /* Resolve the site base once, so the same build works on a custom domain and
@@ -31,7 +32,7 @@
   }
   window.__VCM_BASE__ = base;
 })();
-window.__VCM_CONFIG__ = {"siteUrl": "https://indiavcm.com", "author": "Shubham Love", "authorUrl": "https://www.linkedin.com/in/shubhamlove/", "newsBase": "https://shubhamlove.github.io/indiavcm-news/", "plotlyUrl": "https://cdn.plot.ly/plotly-2.32.0.min.js", "buildDate": "2026-08-14"};
+window.__VCM_CONFIG__ = {"siteUrl": "https://indiavcm.com", "author": "Shubham Love", "authorUrl": "https://www.linkedin.com/in/shubhamlove/", "newsBase": "https://probablyshubham.github.io/indiavcm_news/", "newsFallbackBase": "https://raw.githubusercontent.com/ProbablyShubham/indiavcm_news/main/", "enableNews": true, "plotlyUrl": "https://cdn.plot.ly/plotly-2.32.0.min.js", "buildDate": "2026-08-15"};
 </script>
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -651,10 +652,26 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
   .card{break-inside:avoid;box-shadow:none}
 }
 
+/* v9.1 analyst restoration layer ------------------------------------------------ */
+.news-disabled .news-tab,.news-disabled #panel-news{display:none!important}
+.search-cluster{display:flex;align-items:stretch;gap:8px;flex:1 1 480px;min-width:360px}.search-cluster .tb-search{max-width:none;flex:1}.search-scope-label{display:flex;align-items:center;gap:6px;padding:0 8px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:var(--surface);font-size:var(--t-xs);color:var(--ink-3);white-space:nowrap}.search-scope-label select{border:0;background:transparent;color:var(--ink);font-size:var(--t-xs);font-weight:600;outline:0}.search-scope-label.compact{height:32px}
+.eyebrow{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--pacific-deep);font-weight:700;margin-bottom:4px}
+body.workspace-mode #panel-map{display:flex!important}body.workspace-mode .filter-rail{display:none!important}body.workspace-mode .rail-toggle{display:none!important}body.workspace-mode .workspace-console{display:flex!important}body.workspace-mode #map{border-left:1px solid var(--border)}
+.workspace-console{width:410px;flex:none;background:var(--surface);border-right:1px solid var(--border);z-index:30;display:none;flex-direction:column;overflow:hidden}.workspace-head{padding:16px 16px 12px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,rgba(88,164,176,.08),transparent)}.workspace-head h2{font-size:20px}.workspace-head p{font-size:12px;color:var(--ink-3);margin:5px 0 0;line-height:1.5}.workspace-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--surface-2)}.workspace-steps span{font-size:10px;color:var(--ink-2);text-align:center;padding:6px;border:1px solid var(--border);border-radius:8px;background:var(--surface)}.workspace-steps b{color:var(--pacific-deep)}.workspace-scroll{overflow:auto;padding:0 16px 28px}.ws-section{padding:15px 0;border-bottom:1px solid var(--border)}.ws-section:last-child{border-bottom:0}.ws-section h3{font-family:var(--font-body);font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);margin-bottom:9px}.ws-presets,.ws-actions{display:flex;flex-wrap:wrap;gap:6px}.ws-presets button,.ws-actions button{border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:5px 8px;font-size:10.5px;color:var(--ink-2)}.ws-presets button:hover,.ws-actions button:hover{border-color:var(--pacific);color:var(--ink)}.ws-checks{display:grid;grid-template-columns:1fr 1fr;gap:7px 10px;margin-top:10px}.ws-checks label{font-size:11px;display:flex;gap:6px;align-items:flex-start}.ws-note{font-size:10.5px;color:var(--ink-3);line-height:1.45;margin:8px 0 0}.ws-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:10px}.ws-summary div{padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);text-align:center}.ws-summary b{display:block;font-family:var(--font-mono);font-size:16px}.ws-summary span{font-size:9px;color:var(--ink-3)}.layer-drop{display:flex;width:100%;flex-direction:column;align-items:center;gap:3px;padding:18px 12px;border:1.5px dashed var(--border-strong);border-radius:10px;background:var(--surface-2);color:var(--ink-2)}.layer-drop:hover{border-color:var(--pacific)}.layer-drop span{font-size:10px;color:var(--ink-3)}.privacy-note{display:flex;gap:6px;margin-top:8px;font-size:10px;color:var(--ink-3);line-height:1.4}.privacy-note>span:first-child{color:var(--ok)}.layer-list{margin-top:8px}.local-layer-row{display:grid;grid-template-columns:1fr auto;gap:7px;align-items:center;padding:7px;border:1px solid var(--border);border-radius:8px;margin-top:6px}.local-layer-row b{font-size:10.5px}.local-layer-row span{font-size:9.5px;color:var(--ink-3)}
+.detail-actions{display:flex;gap:6px;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--border);background:var(--surface-2)}.detail-actions button{font-size:10.5px}
+.insight-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}.insight-tabs button{border:1px solid var(--border);background:var(--surface);padding:7px 11px;border-radius:999px;font-size:12px}.insight-tabs button.on{background:var(--charcoal);border-color:var(--charcoal);color:white}.insight-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px}.insight-card{grid-column:span 6;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);padding:16px;box-shadow:var(--shadow-1)}.insight-card.full{grid-column:1/-1}.insight-card h3{font-size:15px;margin-bottom:8px}.intel-list{display:grid;gap:6px}.intel-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid var(--border)}.intel-row:last-child{border-bottom:0}.intel-row button{border:0;background:none;text-align:left;padding:0;color:var(--ink);font-weight:600}.intel-row small{color:var(--ink-3)}.compare-pool{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.compare-chip{display:inline-flex;align-items:center;gap:5px;padding:5px 8px;border:1px solid var(--border);border-radius:999px;background:var(--surface-2);font-size:10px}.compare-table{width:100%;border-collapse:collapse;font-size:11px}.compare-table th,.compare-table td{padding:7px;border-bottom:1px solid var(--border);vertical-align:top}.compare-table th{color:var(--ink-3);text-align:left}.quality-meter{display:grid;grid-template-columns:170px 1fr 54px;gap:8px;align-items:center;margin:7px 0;font-size:11px}.quality-meter .bar{height:8px;background:var(--surface-2);border-radius:999px;overflow:hidden}.quality-meter .bar i{display:block;height:100%;background:var(--pacific);border-radius:inherit}
+.marker-solid-note{font-size:10px;color:var(--ink-3);margin-top:5px}
+.publication-mode header.app-header,.publication-mode .release-strip,.publication-mode nav.tabbar,.publication-mode .chipbar,.publication-mode .map-toolbar,.publication-mode .filter-rail,.publication-mode .workspace-console,.publication-mode .rail-toggle,.publication-mode .detail,.publication-mode .mobile-fab{display:none!important}.publication-mode main.panels,.publication-mode #panel-map,.publication-mode .map-body{height:100dvh!important;min-height:100dvh!important}.publication-mode #map{height:100dvh!important}.publication-title{position:absolute;top:14px;left:14px;z-index:670;max-width:60%;background:rgba(255,255,255,.92);border:1px solid var(--border);border-radius:10px;padding:9px 11px;box-shadow:var(--shadow-1)}.publication-title b{display:block;font-family:var(--font-display);font-size:15px}.publication-title span{font-size:10px;color:#657080}
+body.mobile-site .desktop-workspace-tab,body.mobile-site .workspace-console{display:none!important}body.mobile-site .brand-tag{display:none!important}body.mobile-site .release-strip{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}body.mobile-site .release-strip::-webkit-scrollbar{display:none}body.mobile-site .map-toolbar .tb-group{display:none!important}body.mobile-site .search-cluster{min-width:0;flex:1 1 100%;display:grid;grid-template-columns:1fr auto;width:100%}body.mobile-site .search-cluster .tb-search{grid-column:1/-1}body.mobile-site .search-scope-label span{display:none}body.mobile-site .workspace-console{width:100%}
+
+.chart-grid-restored{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}.chart-card-r{grid-column:span 6;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--shadow-1);overflow:hidden}.chart-card-r.wide{grid-column:1/-1}.chart-head-r{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:15px 16px 10px}.chart-head-r h3{font-size:16px}.chart-head-r p{font-size:11px;color:var(--ink-3);margin:4px 0 0;line-height:1.45}.chart-png{flex:none;border:1px solid var(--border);background:var(--surface);border-radius:7px;padding:5px 8px;font-size:10px;color:var(--ink-2)}.chart-controls-r{display:flex;flex-wrap:wrap;gap:6px;padding:0 16px 10px}.chart-controls-r button{border:1px solid var(--border);background:var(--surface-2);border-radius:999px;padding:4px 8px;font-size:10px}.chart-controls-r button.on{background:var(--charcoal);color:white;border-color:var(--charcoal)}.chart-frame-r{position:relative;padding:0 8px 6px;min-height:330px}.chart-div-r{width:100%;height:340px;min-width:0}.chart-card-r.wide .chart-div-r{height:440px}.chart-foot-r{border-top:1px solid var(--border);padding:10px 16px 13px;font-size:10.5px;color:var(--ink-3);line-height:1.5}.emissions-legend{display:flex;flex-wrap:wrap;gap:7px 12px}.emissions-legend span{display:inline-flex;align-items:center;gap:5px}.emissions-legend i{width:9px;height:9px;border-radius:50%;display:inline-block}.subset-banner{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:8px 11px;border:1px solid rgba(88,164,176,.35);background:rgba(88,164,176,.08);border-radius:8px;font-size:11px;margin-bottom:12px}.subset-banner button{border:0;background:none;color:var(--pacific-deep);font-weight:700}
+@media(max-width:900px){.chart-card-r{grid-column:1/-1}.chart-card-r.wide .chart-div-r,.chart-div-r{height:390px}.chart-grid-restored{gap:10px}.chart-head-r{padding:13px 13px 8px}.chart-foot-r{padding:9px 13px 12px}}@media(max-width:520px){.chart-div-r,.chart-card-r.wide .chart-div-r{height:420px}.chart-frame-r{padding:0 3px}.chart-head-r h3{font-size:15px}}
+@media(max-width:980px){.workspace-console{width:360px}.insight-card{grid-column:1/-1}.search-cluster{min-width:300px}}@media(max-width:820px){.search-cluster{min-width:0;flex:1 1 100%;display:grid;grid-template-columns:1fr auto;width:100%}.search-cluster .tb-search{grid-column:1/-1}.search-scope-label span{display:none}.desktop-workspace-tab{display:none!important}.workspace-console{display:none!important}.quality-meter{grid-template-columns:120px 1fr 44px}}
+
 </style>
 
 </head>
-<body>
+<body class="desktop-site news-enabled">
 
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -698,17 +715,19 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
     <span class="release-item"><b class="num" id="relProjects">—</b> projects</span>
     <span class="release-item"><b class="num" id="relMapped">—</b> mapped</span>
     <span class="release-item"><b class="num" id="relCredits">—</b> credits issued</span>
+    <span class="release-item news-ticker"><b class="num" id="relNews">—</b> news signals · 30d</span>
     <a class="release-link" href="#" id="relChanges">What changed this month →</a>
   </div>
 
   <nav class="tabbar" role="tablist" aria-label="Explorer sections">
-    <button class="tab" role="tab" id="tab-map"     aria-controls="panel-map"     aria-selected="true"  data-tab="map">Map</button>
-    <button class="tab" role="tab" id="tab-news"    aria-controls="panel-news"    aria-selected="false" data-tab="news">News <span class="tab-count" id="newsCount" hidden></span></button>
-    <button class="tab" role="tab" id="tab-charts"  aria-controls="panel-charts"  aria-selected="false" data-tab="charts">Charts</button>
-    <button class="tab" role="tab" id="tab-data"    aria-controls="panel-data"    aria-selected="false" data-tab="data">Data</button>
-    <button class="tab" role="tab" id="tab-changes" aria-controls="panel-changes" aria-selected="false" data-tab="changes">Changes</button>
-    <button class="tab" role="tab" id="tab-quality" aria-controls="panel-quality" aria-selected="false" data-tab="quality">Data quality</button>
-    <button class="tab" role="tab" id="tab-about"   aria-controls="panel-about"   aria-selected="false" data-tab="about">About</button>
+    <button class="tab" role="tab" id="tab-map"       aria-controls="panel-map"      aria-selected="true"  data-tab="map">Explore</button>
+    <button class="tab desktop-workspace-tab" role="tab" id="tab-workspace" aria-controls="panel-map" aria-selected="false" data-tab="workspace">Workspace</button>
+    <button class="tab" role="tab" id="tab-charts"    aria-controls="panel-charts"   aria-selected="false" data-tab="charts">Charts</button>
+    <button class="tab" role="tab" id="tab-data"      aria-controls="panel-data"     aria-selected="false" data-tab="data">Data</button>
+    <button class="tab" role="tab" id="tab-insights"  aria-controls="panel-insights" aria-selected="false" data-tab="insights">Insights</button>
+    <button class="tab" role="tab" id="tab-changes"   aria-controls="panel-changes"  aria-selected="false" data-tab="changes">Changes</button>
+    <button class="tab news-tab" role="tab" id="tab-news" aria-controls="panel-news" aria-selected="false" data-tab="news">News <span class="tab-count" id="newsCount" hidden></span></button>
+    <button class="tab" role="tab" id="tab-about"     aria-controls="panel-about"    aria-selected="false" data-tab="about">About</button>
   </nav>
 
   <div class="chipbar" id="chipbar" hidden>
@@ -723,12 +742,21 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
     <!-- ================= MAP ================= -->
     <section class="panel is-active" id="panel-map" role="tabpanel" aria-labelledby="tab-map" tabindex="-1">
       <div class="map-toolbar">
-        <div class="tb-search">
-          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
-          <input type="search" id="mapSearch" placeholder="Search projects, developers, methodologies, districts"
-                 autocomplete="off" role="combobox" aria-expanded="false" aria-controls="mapTypeahead"
-                 aria-label="Search projects, developers, methodologies and districts">
-          <div class="typeahead" id="mapTypeahead" role="listbox" aria-label="Search results" hidden></div>
+        <div class="search-cluster">
+          <div class="tb-search">
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+            <input type="search" id="mapSearch" placeholder="Search projects — Boolean operators supported"
+                   autocomplete="off" role="combobox" aria-expanded="false" aria-controls="mapTypeahead"
+                   aria-label="Search projects">
+            <div class="typeahead" id="mapTypeahead" role="listbox" aria-label="Search results" hidden></div>
+          </div>
+          <label class="search-scope-label"><span>Search in</span>
+            <select id="mapSearchScope" aria-label="Search scope">
+              <option value="title">Project title</option>
+              <option value="title_description">Title + description</option>
+              <option value="all" selected>All metadata</option>
+            </select>
+          </label>
         </div>
         <div class="tb-group">
           <span class="tb-label" id="lblColor">Colour</span>
@@ -819,6 +847,34 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
 
         <div class="legend" id="legend" hidden></div>
 
+        <aside class="workspace-console" id="workspaceConsole" aria-label="Analysis workspace" hidden>
+          <div class="workspace-head">
+            <div><span class="eyebrow">Analysis workspace</span><h2>Build a spatial view</h2>
+            <p>Filter location quality, select geography, add private local layers and export the result.</p></div>
+          </div>
+          <div class="workspace-steps"><span><b>1</b> Define the view</span><span><b>2</b> Select geography</span><span><b>3</b> Export or compare</span></div>
+          <div class="workspace-scroll">
+            <section class="ws-section"><h3>Location quality</h3>
+              <div class="ws-presets"><button data-wspreset="all">All mapped</button><button data-wspreset="high">High confidence</button><button data-wspreset="no_centroids">Exclude centroids</button><button data-wspreset="site">Site / registry only</button></div>
+              <div id="wsLocationChecks" class="ws-checks"></div>
+              <p class="ws-note">These controls change the view and exports, never the underlying dataset.</p>
+            </section>
+            <section class="ws-section"><h3>Spatial selection</h3>
+              <div class="ws-actions"><button id="wsViewport">Use current map extent</button><button id="wsDraw">Draw area</button><button id="wsClearSpatial">Clear selection</button></div>
+              <div class="ws-summary"><div><b id="wsVisible">—</b><span>visible</span></div><div><b id="wsSelected">—</b><span>selected</span></div><div><b id="wsHidden">0</b><span>hidden</span></div></div>
+            </section>
+            <section class="ws-section"><h3>Private local GIS layer</h3>
+              <button class="layer-drop" id="layerDrop" type="button"><b>Add your layer</b><span>GeoJSON · KML · zipped shapefile · lat/lon CSV · GeoTIFF</span></button>
+              <input id="layerInput" type="file" hidden accept=".geojson,.json,.kml,.zip,.csv,.tif,.tiff">
+              <div class="privacy-note"><span>●</span><span>Files are processed locally in your browser and are not uploaded to India VCM Explorer.</span></div>
+              <div id="layerList" class="layer-list"></div>
+            </section>
+            <section class="ws-section"><h3>Workspace actions</h3>
+              <div class="ws-actions"><button id="wsRestoreHidden">Restore hidden points</button><button id="wsCompare">Compare selected</button><button id="wsBundle">Analysis bundle</button><button id="wsPublication">Publication mode</button></div>
+            </section>
+          </div>
+        </aside>
+
         <aside class="detail" id="detail" role="dialog" aria-modal="false" aria-labelledby="detailName" hidden>
           <div class="detail-head">
             <button class="icon-btn" id="detailClose" aria-label="Close project details">
@@ -827,7 +883,7 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
             <div class="detail-name" id="detailName"></div>
             <div class="badge-row" id="detailBadges"></div>
           </div>
-          <div class="detail-body" id="detailBody"></div>
+          <div class="detail-actions" id="detailActions"></div><div class="detail-body" id="detailBody"></div>
         </aside>
       </div>
 
@@ -844,6 +900,9 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
               <button data-v="30" aria-pressed="true">30 days</button>
               <button data-v="90" aria-pressed="false">90 days</button>
             </div>
+            <label class="news-category-filter"><span class="sr-only">News category</span>
+              <select id="newsCategory" aria-label="News category"><option value="all">All categories</option></select>
+            </label>
             <button class="btn btn-sm" id="btnNewsMappedOnly" aria-pressed="false">Mapped only</button>
           </div>
           <div id="newsItems"></div>
@@ -860,10 +919,12 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
     <!-- ================= DATA ================= -->
     <section class="panel" id="panel-data" role="tabpanel" aria-labelledby="tab-data" tabindex="-1" hidden>
       <div class="data-controls">
-        <div class="tb-search" style="max-width:360px">
+        <div class="tb-search" style="max-width:420px">
           <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
-          <input type="search" id="dataSearch" placeholder="Search the filtered table" aria-label="Search the filtered table">
+          <input type="search" id="dataSearch" placeholder="Boolean search: AND, OR, NOT, phrases, field:value" aria-label="Search the filtered table">
         </div>
+        <label class="search-scope-label compact"><span>Search in</span><select id="dataSearchScope"><option value="title">Project title</option><option value="title_description">Title + description</option><option value="all" selected>All metadata</option></select></label>
+        <button class="btn" id="analysisBundleBtn">Analysis bundle</button>
         <button class="btn" id="btnCsv">Download CSV</button>
         <button class="btn" id="btnGeojson">Download GeoJSON</button>
         <span class="chip-count" id="dataCount"></span>
@@ -876,6 +937,20 @@ table.dtable{width:100%;border-collapse:separate;border-spacing:0;font-size:var(
         </table>
       </div>
       <div class="pager" id="dataPager"></div>
+    </section>
+
+    <!-- ================= INSIGHTS ================= -->
+    <section class="panel" id="panel-insights" role="tabpanel" aria-labelledby="tab-insights" tabindex="-1" hidden>
+      <div class="page insights-page">
+        <div class="page-head"><span class="eyebrow">Market intelligence</span><h1>Insights</h1><p>Explore methodologies and developers, compare projects, and inspect data quality.</p></div>
+        <div class="insight-tabs" role="tablist" aria-label="Insight views">
+          <button class="on" data-insight="methodologies">Methodologies</button>
+          <button data-insight="developers">Developers</button>
+          <button data-insight="compare">Compare projects</button>
+          <button data-insight="quality">Data quality</button>
+        </div>
+        <div id="insightsRoot"></div>
+      </div>
     </section>
 
     <!-- ================= CHANGES ================= -->
@@ -2533,6 +2608,269 @@ async function boot(){
 
 if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
 else boot();
+
+
+/* ==========================================================================
+   v9.1 analyst restoration module
+   ========================================================================== */
+VCM.cfg.enableNews = !!VCM.cfg.enableNews;
+VCM.filters.searchScope = VCM.filters.searchScope || 'all';
+VCM.workspace = {locationClasses:new Set(['site','corrected','district','state','offshore','outside','flagged','other']), hiddenIds:new Set(), spatialIds:null, localLayers:[], compareIds:new Set(), insight:'methodologies'};
+
+function locationClass(p){
+  if(p._lat==null||p._lon==null) return 'unlocated';
+  const src=String(get(p,'locSource')||get(p,'geomSource')||'').toLowerCase(), q=String(get(p,'coordQual')||'').toLowerCase();
+  if(/bad_coord|flag|placeholder|unverified|question/.test(src+' '+q)) return 'flagged';
+  if(/offshore/.test(src+' '+q)) return 'offshore';
+  if(p._lat<6||p._lat>38.5||p._lon<67||p._lon>98.5) return 'outside';
+  if(/state.*centroid|geocoded_state|state_near_centroid/.test(src)) return 'state';
+  if(/district.*centroid|geocoded_district|district_near_centroid/.test(src)) return 'district';
+  if(/swap_fixed|sign_fixed|corrected/.test(src+' '+q)) return 'corrected';
+  if(p._confidence==='site') return 'site';
+  return 'other';
+}
+const LOCATION_LABELS={site:'Registry / site geometry',corrected:'Corrected coordinate',district:'District-level approximation',state:'State-level approximation',offshore:'Near-offshore',outside:'Outside India',flagged:'Flagged / unverified',other:'Other mapped'};
+
+function fieldText(p,field){
+  const f=String(field||'').toLowerCase();
+  const map={title:p._name,project:p._name,description:get(p,'description'),registry:p._registry,state:p._state,district:p._district,methodology:get(p,'methodology'),developer:get(p,'developer'),scope:p._scope,category:p._scope,status:p._status,id:p._id};
+  return String(map[f]??'');
+}
+function searchCorpus(p){
+  const s=VCM.filters.searchScope||'all';
+  if(s==='title') return p._name||'';
+  if(s==='title_description') return [p._name,get(p,'description')].filter(Boolean).join(' ');
+  return [p._id,p._name,p._registry,p._scope,p._status,p._state,p._district,get(p,'methodology'),get(p,'developer'),get(p,'type'),get(p,'description')].filter(Boolean).join(' ');
+}
+function tokenizeQuery(q){
+  const out=[]; const re=/\s*(\(|\)|AND\b|OR\b|NOT\b|(?:[a-zA-Z_][\w-]*:)?"(?:\\.|[^"])*"|(?:[a-zA-Z_][\w-]*:)?[^\s()]+)\s*/gi; let m;
+  while((m=re.exec(String(q||'')))){let raw=m[1]; if(!raw)continue; if(/^(AND|OR|NOT)$/i.test(raw))out.push({t:raw.toUpperCase()}); else if(raw==='('||raw===')')out.push({t:raw}); else {let field=null,val=raw,ix=raw.indexOf(':'); if(ix>0){field=raw.slice(0,ix);val=raw.slice(ix+1);} if(val.startsWith('"')&&val.endsWith('"'))val=val.slice(1,-1).replace(/\\"/g,'"'); out.push({t:'TERM',field,value:val});}}
+  return out;
+}
+function compileQuery(q){
+  const toks=tokenizeQuery(q); let i=0; const peek=()=>toks[i],take=()=>toks[i++];
+  const term=tok=>p=>{const needle=String(tok.value||'').toLowerCase();const hay=(tok.field?fieldText(p,tok.field):searchCorpus(p)).toLowerCase();return hay.includes(needle);};
+  function primary(){const x=peek();if(!x)return ()=>true;if(x.t==='('){take();const f=orExpr();if(peek()&&peek().t===')')take();return f;}if(x.t==='TERM'){take();return term(x);}take();return ()=>true;}
+  function notExpr(){if(peek()&&peek().t==='NOT'){take();const f=notExpr();return p=>!f(p);}return primary();}
+  function andExpr(){let f=notExpr();while(peek()&&(peek().t==='AND'||peek().t==='TERM'||peek().t==='('||peek().t==='NOT')){if(peek().t==='AND')take();const g=notExpr(),old=f;f=p=>old(p)&&g(p);}return f;}
+  function orExpr(){let f=andExpr();while(peek()&&peek().t==='OR'){take();const g=andExpr(),old=f;f=p=>old(p)||g(p);}return f;}
+  try{return orExpr();}catch(e){const needle=String(q||'').toLowerCase();return p=>searchCorpus(p).toLowerCase().includes(needle);}
+}
+let _compiledQueryKey='',_compiledQuery=()=>true;
+function queryMatches(p,q){const key=(VCM.filters.searchScope||'all')+'|'+String(q||'');if(key!==_compiledQueryKey){_compiledQueryKey=key;_compiledQuery=compileQuery(q);}return _compiledQuery(p);}
+
+function matchesFilters(p){
+  const f=VCM.filters,w=VCM.workspace;
+  if(f.registry.size&&!f.registry.has(p._registry))return false;if(f.scope.size&&!f.scope.has(p._scope))return false;if(f.status.size&&!f.status.has(p._status))return false;if(f.confidence.size&&!f.confidence.has(p._confidence))return false;
+  if(f.vintMin!=null&&(p._vintage==null||p._vintage<f.vintMin))return false;if(f.vintMax!=null&&(p._vintage==null||p._vintage>f.vintMax))return false;if(f.credMin!=null&&(p._issued==null||p._issued<f.credMin))return false;if(f.credMax!=null&&(p._issued==null||p._issued>f.credMax))return false;
+  if(f.q&&!queryMatches(p,f.q))return false;
+  if(p._lat!=null&&p._lon!=null&&!w.locationClasses.has(locationClass(p)))return false;
+  if(w.hiddenIds.has(p._id))return false;
+  if(w.spatialIds&& !w.spatialIds.has(p._id))return false;
+  return true;
+}
+
+function writeUrl(){
+  const f=VCM.filters,q=new URLSearchParams(); if(VCM.view.tab!=='map')q.set('tab',VCM.view.tab);if(f.registry.size)q.set('registry',[...f.registry].join('|'));if(f.scope.size)q.set('scope',[...f.scope].join('|'));if(f.status.size)q.set('status',[...f.status].join('|'));if(f.confidence.size)q.set('conf',[...f.confidence].join('|'));if(f.vintMin!=null||f.vintMax!=null)q.set('vintage',(f.vintMin??'')+'..'+(f.vintMax??''));if(f.credMin!=null||f.credMax!=null)q.set('credits',(f.credMin??'')+'..'+(f.credMax??''));if(f.q)q.set('q',f.q);if(f.searchScope&&f.searchScope!=='all')q.set('search',f.searchScope);if(VCM.view.colorBy!=='scope')q.set('color',VCM.view.colorBy);if(VCM.workspace.spatialIds)q.set('spatial','1');const hash=VCM.view.selected?'#project/'+encodeURIComponent(VCM.view.selected):'';history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+hash);
+}
+function readUrl(){
+  const q=new URLSearchParams(location.search),f=VCM.filters,setOf=k=>new Set((q.get(k)||'').split('|').filter(Boolean));f.registry=setOf('registry');f.scope=setOf('scope');f.status=setOf('status');f.confidence=setOf('conf');const range=(k,a,b)=>{const v=q.get(k);if(!v)return;const [lo,hi]=v.split('..');f[a]=lo===''?null:num(lo);f[b]=hi===''?null:num(hi);};range('vintage','vintMin','vintMax');range('credits','credMin','credMax');f.q=q.get('q')||'';f.searchScope=q.get('search')||'all';if(q.get('color'))VCM.view.colorBy=q.get('color');const m=/^#project\/(.+)$/.exec(location.hash||'');if(m)VCM.view.selected=decodeURIComponent(m[1]);const route=q.get('route')||'';if(route.startsWith('project/'))VCM.view.selected=decodeURIComponent(route.split('/').pop());return route==='workspace'?'workspace':route==='insights'?'insights':route==='charts'?'charts':route==='data'?'data':route==='changes'?'changes':route==='about'?'about':q.get('tab')||'map';
+}
+function resetFilters(){VCM.filters={registry:new Set(),scope:new Set(),status:new Set(),confidence:new Set(),vintMin:null,vintMax:null,credMin:null,credMax:null,q:'',searchScope:VCM.filters.searchScope||'all'};syncFilterControls();invalidate();}
+
+function markerFor(p){const col=colorFor(p);return L.circleMarker([p._lat,p._lon],{renderer:RENDERER,radius:p._confidence==='site'?5:4.6,color:col,weight:1,fillColor:col,fillOpacity:.86,opacity:1});}
+function renderLegend(){const host=$('#legend'),mode=VCM.view.colorBy,map=mode==='registry'?REGISTRY_COLORS:mode==='confidence'?CONFIDENCE_COLORS:SCOPE_COLORS,present=new Set(filtered().map(p=>mode==='registry'?p._registry:mode==='confidence'?p._confidence:p._scope)),title=mode==='registry'?'Registry':mode==='confidence'?'Location confidence':'Category';let html='<h5>'+title+'</h5>';[...present].sort().slice(0,12).forEach(k=>{const label=mode==='confidence'&&CONFIDENCE[k]?CONFIDENCE[k].label:k;html+='<div class="legend-row"><span class="legend-swatch" style="background:'+(map[k]||FALLBACK_COLOR)+'"></span>'+esc(label)+'</div>';});html+='<hr><div class="marker-solid-note">All mapped projects use solid markers. Location precision is shown in project details and Workspace filters.</div>';host.innerHTML=html;host.hidden=false;}
+
+function showTab(tab,opts){opts=opts||{};if(tab==='news'&&!VCM.cfg.enableNews)tab='map';const mobile=document.body.classList.contains('mobile-site');if(tab==='workspace'&&mobile)tab='map';const visible=tab==='workspace'?'map':tab;if(!$('#panel-'+visible))tab='map';VCM.view.tab=tab;document.body.classList.toggle('workspace-mode',tab==='workspace');$$('.tab').forEach(t=>{const on=t.dataset.tab===tab;t.setAttribute('aria-selected',on?'true':'false');t.tabIndex=on?0:-1;});$$('.panel').forEach(p=>{const on=p.id==='panel-'+visible;p.classList.toggle('is-active',on);p.hidden=!on;});const wc=$('#workspaceConsole');if(wc)wc.hidden=tab!=='workspace';const init=PANEL_INIT[visible];if(init&&!init.done){init.done=true;init.fn();}if(init&&init.refresh)init.refresh();if(tab==='insights'&&!PANEL_INIT.insights?.done){PANEL_INIT.insights={done:true,fn:initInsights};initInsights();}if(tab==='insights')renderInsights();updateChipbar();if(!opts.silent)writeUrl();if(opts.focus)$('#panel-'+visible)?.focus();if((tab==='map'||tab==='workspace')&&MAP)setTimeout(()=>MAP.invalidateSize(),80);updateWorkspaceSummary();}
+
+function initSearchScopes(){['mapSearchScope','dataSearchScope'].forEach(id=>{const el=$('#'+id);if(!el)return;el.value=VCM.filters.searchScope||'all';el.addEventListener('change',()=>{VCM.filters.searchScope=el.value;$$('#mapSearchScope,#dataSearchScope').forEach(x=>x.value=el.value);VCM.cache.dirty=true;invalidate();if(VCM.view.tab==='data')renderTable();});});}
+function tableRows(){let rows=filtered();if(tableState.q)rows=rows.filter(p=>queryMatches(p,tableState.q));const k=tableState.sort,d=tableState.dir;return rows.slice().sort((a,b)=>{const av=a[k],bv=b[k];if(av==null&&bv==null)return 0;if(av==null)return 1;if(bv==null)return-1;if(typeof av==='number'&&typeof bv==='number')return(av-bv)*d;return String(av).localeCompare(String(bv))*d;});}
+
+function detailActions(p){const host=$('#detailActions');if(!host)return;const compared=VCM.workspace.compareIds.has(p._id);host.innerHTML='<button class="btn" id="detailCompare">'+(compared?'Remove from comparison':'Add to comparison')+'</button><button class="btn" id="detailHide">Hide from workspace map</button><button class="btn" id="detailCopy">Copy project link</button>';$('#detailCompare').onclick=()=>{if(compared)VCM.workspace.compareIds.delete(p._id);else{if(VCM.workspace.compareIds.size>=5){toast('Compare up to five projects.');return;}VCM.workspace.compareIds.add(p._id);}detailActions(p);renderInsights();};$('#detailHide').onclick=()=>{VCM.workspace.hiddenIds.add(p._id);invalidate();updateWorkspaceSummary();closeDetail();toast('Project hidden from this workspace view.');};$('#detailCopy').onclick=()=>{const u=location.origin+sitePath('project/'+encodeURIComponent(p._id)+'/');navigator.clipboard?.writeText(u);toast('Project link copied.');};}
+const _openDetailBase=openDetail;openDetail=function(p){_openDetailBase(p);detailActions(p);};
+
+function updateWorkspaceSummary(){const v=$('#wsVisible'),s=$('#wsSelected'),h=$('#wsHidden');if(v)v.textContent=fmtInt(filtered().filter(p=>p._lat!=null&&p._lon!=null).length);if(s)s.textContent=VCM.workspace.spatialIds?fmtInt(VCM.workspace.spatialIds.size):'All';if(h)h.textContent=fmtInt(VCM.workspace.hiddenIds.size);}
+function renderLocationChecks(){const host=$('#wsLocationChecks');if(!host)return;host.innerHTML=Object.entries(LOCATION_LABELS).map(([k,label])=>'<label><input type="checkbox" value="'+k+'" '+(VCM.workspace.locationClasses.has(k)?'checked':'')+'><span>'+esc(label)+'</span></label>').join('');host.querySelectorAll('input').forEach(x=>x.onchange=()=>{if(x.checked)VCM.workspace.locationClasses.add(x.value);else VCM.workspace.locationClasses.delete(x.value);invalidate();updateWorkspaceSummary();});}
+function applyWorkspacePreset(name){const all=Object.keys(LOCATION_LABELS);let vals=all;if(name==='high')vals=['site','corrected'];if(name==='no_centroids')vals=all.filter(x=>!['district','state'].includes(x));if(name==='site')vals=['site'];VCM.workspace.locationClasses=new Set(vals);renderLocationChecks();invalidate();updateWorkspaceSummary();}
+function selectByBounds(bounds){VCM.workspace.spatialIds=new Set(VCM.projects.filter(p=>p._lat!=null&&p._lon!=null&&bounds.contains([p._lat,p._lon])).map(p=>p._id));VCM.cache.dirty=true;invalidate();updateWorkspaceSummary();toast(fmtInt(VCM.workspace.spatialIds.size)+' projects selected.');}
+async function startDrawSelection(){try{await loadScript('https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js');if(!document.querySelector('link[data-vcm-draw]')){const l=document.createElement('link');l.rel='stylesheet';l.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css';l.dataset.vcmDraw='1';document.head.appendChild(l);}await loadScript('https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js');}catch(e){toast('Drawing tools could not be loaded.');return;}const fg=new L.FeatureGroup().addTo(MAP);const draw=new L.Draw.Polygon(MAP,{shapeOptions:{color:'#3d7f8a',weight:2,fillOpacity:.08}});const done=e=>{MAP.off(L.Draw.Event.CREATED,done);const layer=e.layer;fg.addLayer(layer);const poly=layer.toGeoJSON();VCM.workspace.spatialIds=new Set(VCM.projects.filter(p=>{if(p._lat==null||p._lon==null)return false;try{return turf.booleanPointInPolygon(turf.point([p._lon,p._lat]),poly);}catch(err){return false;}}).map(p=>p._id));VCM.cache.dirty=true;invalidate();updateWorkspaceSummary();toast(fmtInt(VCM.workspace.spatialIds.size)+' projects selected.');};MAP.once(L.Draw.Event.CREATED,done);draw.enable();}
+
+async function loadLocalLayer(file){const ext=file.name.split('.').pop().toLowerCase();let layer=null,gj=null,label=file.name;try{if(['geojson','json'].includes(ext)){gj=JSON.parse(await file.text());}else if(ext==='kml'){await loadScript('https://cdn.jsdelivr.net/npm/@tmcw/togeojson@5.8.1/dist/togeojson.umd.js');const xml=new DOMParser().parseFromString(await file.text(),'text/xml');gj=toGeoJSON.kml(xml);}else if(ext==='zip'){await loadScript('https://unpkg.com/shpjs@latest/dist/shp.js');gj=await shp(await file.arrayBuffer());if(Array.isArray(gj))gj={type:'FeatureCollection',features:gj.flatMap(x=>x.features||[])};}else if(ext==='csv'){await loadScript('https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js');const parsed=Papa.parse(await file.text(),{header:true,skipEmptyLines:true});const fields=parsed.meta.fields||[],lat=fields.find(x=>/^(lat|latitude|y)$/i.test(x)),lon=fields.find(x=>/^(lon|lng|longitude|x)$/i.test(x));if(!lat||!lon)throw new Error('CSV needs latitude and longitude columns');gj={type:'FeatureCollection',features:parsed.data.map(r=>{const a=+r[lat],o=+r[lon];return Number.isFinite(a)&&Number.isFinite(o)?{type:'Feature',geometry:{type:'Point',coordinates:[o,a]},properties:r}:null;}).filter(Boolean)};}else if(['tif','tiff'].includes(ext)){await loadScript('https://unpkg.com/georaster');await loadScript('https://unpkg.com/georaster-layer-for-leaflet');const raster=await parseGeoraster(await file.arrayBuffer());layer=new GeoRasterLayer({georaster:raster,opacity:.62,resolution:256});layer.addTo(MAP);MAP.fitBounds(layer.getBounds());}else throw new Error('Unsupported file type');if(gj){layer=L.geoJSON(gj,{style:{color:'#b97f74',weight:2,fillColor:'#daa49a',fillOpacity:.12},pointToLayer:(f,ll)=>L.circleMarker(ll,{radius:5,color:'#b97f74',fillColor:'#daa49a',fillOpacity:.85,weight:1})}).addTo(MAP);try{MAP.fitBounds(layer.getBounds(),{padding:[18,18]});}catch(e){}}VCM.workspace.localLayers.push({name:label,layer,geojson:gj});renderLocalLayers();updateWorkspaceSummary();}catch(e){toast('Could not open '+file.name+': '+e.message);}}
+function renderLocalLayers(){const host=$('#layerList');if(!host)return;host.innerHTML=VCM.workspace.localLayers.map((x,i)=>'<div class="local-layer-row"><div><b>'+esc(x.name)+'</b><br><span>Local browser layer</span></div><button class="btn" data-remove-layer="'+i+'">Remove</button></div>').join('');host.querySelectorAll('[data-remove-layer]').forEach(b=>b.onclick=()=>{const i=+b.dataset.removeLayer,x=VCM.workspace.localLayers[i];if(x?.layer&&MAP.hasLayer(x.layer))MAP.removeLayer(x.layer);VCM.workspace.localLayers.splice(i,1);renderLocalLayers();updateWorkspaceSummary();});}
+
+async function mapPngBlob(){try{await loadScript('https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js');const canvas=await html2canvas($('#map'),{useCORS:true,allowTaint:false,backgroundColor:'#f4f6f8',logging:false});const out=document.createElement('canvas');out.width=canvas.width;out.height=canvas.height;const c=out.getContext('2d');c.drawImage(canvas,0,0);const text='indiavcm.com';c.font='600 13px Arial';const w=c.measureText(text).width+18;c.fillStyle='rgba(255,255,255,.88)';c.fillRect(out.width-w-10,out.height-36,w,26);c.fillStyle='#373f51';c.fillText(text,out.width-w-1,out.height-18);return await new Promise(r=>out.toBlob(r,'image/png'));}catch(e){return null;}}
+async function analysisBundle(){try{await loadScript('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js');}catch(e){toast('ZIP library unavailable.');return;}const rows=filtered(),zip=new JSZip();const csvFields=['project_id','project_name','registry','scope','status','resolved_state','resolved_district','credits_issued','credits_retired','first_vintage_year'];const q=v=>String(v??'').replace(/"/g,'""');zip.file('projects.csv',csvFields.join(',')+'\n'+rows.map(p=>csvFields.map(k=>'"'+q(p[k]??(k==='project_id'?p._id:k==='project_name'?p._name:k==='registry'?p._registry:k==='scope'?p._scope:k==='status'?p._status:k==='resolved_state'?p._state:k==='resolved_district'?p._district:k==='credits_issued'?p._issued:k==='credits_retired'?p._retired:k==='first_vintage_year'?p._vintage:''))+'"').join(',')).join('\n'));const geo={type:'FeatureCollection',features:rows.map(p=>({type:'Feature',geometry:(p._lat!=null&&p._lon!=null)?{type:'Point',coordinates:[p._lon,p._lat]}:null,properties:{project_id:p._id,project_name:p._name,registry:p._registry,scope:p._scope,status:p._status,resolved_state:p._state,resolved_district:p._district,credits_issued:p._issued,credits_retired:p._retired,first_vintage_year:p._vintage,methodology:get(p,'methodology')||null,project_developer:get(p,'developer')||null,resolved_location_source:get(p,'locSource')||null,coordinate_quality:get(p,'coordQual')||null}}))};zip.file('projects.geojson',JSON.stringify(geo,null,2));zip.file('filters.json',JSON.stringify({generated:new Date().toISOString(),url:location.href,search:VCM.filters.q,search_scope:VCM.filters.searchScope,location_classes:[...VCM.workspace.locationClasses],hidden:[...VCM.workspace.hiddenIds],spatial_selection:VCM.workspace.spatialIds?[...VCM.workspace.spatialIds]:null,records:rows.length},null,2));zip.file('README.txt','India VCM Explorer analysis bundle\n\nThis bundle represents the active filters and Workspace selections. Local GIS files are never included or uploaded. Approximate administrative-centroid project locations should not be interpreted as surveyed sites.\n\nhttps://indiavcm.com\n');const png=await mapPngBlob();if(png)zip.file('map.png',png);const blob=await zip.generateAsync({type:'blob',compression:'DEFLATE'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='india-vcm-analysis-'+new Date().toISOString().slice(0,10)+'.zip';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+function publicationMode(){const title=prompt('Map title (optional)','India VCM project analysis')||'',sub=prompt('Subtitle (optional)','')||'';document.body.classList.add('publication-mode');let box=document.createElement('div');box.className='publication-title';box.id='publicationTitle';box.innerHTML='<b>'+esc(title)+'</b><span>'+esc(sub)+'</span>';$('#map').appendChild(box);setTimeout(()=>MAP.invalidateSize(),60);const exit=()=>{document.body.classList.remove('publication-mode');box.remove();window.removeEventListener('keydown',key);};const key=e=>{if(e.key==='Escape')exit();};window.addEventListener('keydown',key);toast('Publication mode active. Press Esc to exit.');}
+
+function initWorkspace(){renderLocationChecks();document.querySelectorAll('[data-wspreset]').forEach(b=>b.onclick=()=>applyWorkspacePreset(b.dataset.wspreset));$('#wsViewport').onclick=()=>selectByBounds(MAP.getBounds());$('#wsDraw').onclick=startDrawSelection;$('#wsClearSpatial').onclick=()=>{VCM.workspace.spatialIds=null;VCM.cache.dirty=true;invalidate();updateWorkspaceSummary();};$('#wsRestoreHidden').onclick=()=>{VCM.workspace.hiddenIds.clear();invalidate();updateWorkspaceSummary();};$('#wsCompare').onclick=()=>{if(VCM.workspace.spatialIds){VCM.workspace.compareIds=new Set([...VCM.workspace.spatialIds].slice(0,5));}showTab('insights');VCM.workspace.insight='compare';renderInsights();};$('#wsBundle').onclick=analysisBundle;$('#wsPublication').onclick=publicationMode;$('#analysisBundleBtn').onclick=analysisBundle;const drop=$('#layerDrop'),input=$('#layerInput');drop.onclick=()=>input.click();drop.ondragover=e=>{e.preventDefault();drop.style.borderColor='var(--pacific)';};drop.ondragleave=()=>drop.style.borderColor='';drop.ondrop=e=>{e.preventDefault();drop.style.borderColor='';[...e.dataTransfer.files].forEach(loadLocalLayer);};input.onchange=()=>{[...input.files].forEach(loadLocalLayer);input.value='';};updateWorkspaceSummary();}
+
+function statFor(list){return {n:list.length,issued:list.reduce((s,p)=>s+(p._issued||0),0),retired:list.reduce((s,p)=>s+(p._retired||0),0),states:new Set(list.map(p=>p._state).filter(Boolean)).size};}
+function groupCount(list,fn){const m=new Map();list.forEach(p=>{const k=fn(p);if(k)m.set(k,(m.get(k)||0)+1);});return [...m.entries()].sort((a,b)=>b[1]-a[1]);}
+function profileRows(kind){const fn=kind==='methodologies'?p=>get(p,'methodology'):p=>get(p,'developer');return groupCount(filtered(),fn);}
+function openGroup(kind,name){const fn=kind==='methodologies'?p=>get(p,'methodology'):p=>get(p,'developer');const list=VCM.projects.filter(p=>String(fn(p)||'')===name);const s=statFor(list);const title=kind==='methodologies'?'Methodology':'Developer / entity';openModal(title,'<h2>'+esc(name)+'</h2><p>'+fmtInt(s.n)+' projects · '+fmtCompact(s.issued)+' credits issued · '+fmtInt(s.states)+' states</p><div class="ws-actions"><button class="btn" id="grpView">View these projects</button><button class="btn" id="grpCompare">Add leading projects to comparison</button></div><div class="intel-list" style="margin-top:12px">'+list.slice().sort((a,b)=>(b._issued||0)-(a._issued||0)).slice(0,30).map(p=>'<div class="intel-row"><button data-project="'+esc(p._id)+'">'+esc(p._name)+'</button><small>'+fmtCompact(p._issued)+'</small></div>').join('')+'</div>');setTimeout(()=>{$('#grpView').onclick=()=>{const ids=new Set(list.map(p=>p._id));VCM.workspace.spatialIds=ids;VCM.cache.dirty=true;invalidate();showTab('data');};$('#grpCompare').onclick=()=>{VCM.workspace.compareIds=new Set(list.slice().sort((a,b)=>(b._issued||0)-(a._issued||0)).slice(0,5).map(p=>p._id));VCM.workspace.insight='compare';renderInsights();};document.querySelectorAll('[data-project]').forEach(b=>b.onclick=()=>{const p=VCM.projects.find(x=>x._id===b.dataset.project);if(p){showTab('map');openDetail(p);}});},0);}
+function renderComparison(){const list=[...VCM.workspace.compareIds].map(id=>VCM.projects.find(p=>p._id===id)).filter(Boolean),fields=[['Project',p=>p._name],['Project ID',p=>p._id],['Registry',p=>p._registry],['Status',p=>p._status],['State',p=>p._state||'—'],['District',p=>p._district||'—'],['Location',p=>LOCATION_LABELS[locationClass(p)]||p._confidence],['Category',p=>p._scope],['Methodology',p=>get(p,'methodology')||'—'],['Developer',p=>get(p,'developer')||'—'],['First vintage',p=>p._vintage||'—'],['Issued',p=>fmtInt(p._issued)],['Retired',p=>fmtInt(p._retired)]];if(!list.length)return '<div class="insight-card full"><h3>Project comparison</h3><p>Select projects from project details or Workspace. Up to five projects can be compared side-by-side.</p></div>';return '<div class="insight-card full"><h3>Project comparison</h3><div class="compare-pool">'+list.map(p=>'<span class="compare-chip">'+esc(p._id)+' <button data-remove-compare="'+esc(p._id)+'">×</button></span>').join('')+'</div><div style="overflow:auto"><table class="compare-table"><thead><tr><th>Field</th>'+list.map(p=>'<th>'+esc(p._id)+'</th>').join('')+'</tr></thead><tbody>'+fields.map(([k,fn])=>'<tr><th>'+esc(k)+'</th>'+list.map(p=>'<td>'+esc(fn(p))+'</td>').join('')+'</tr>').join('')+'</tbody></table></div></div>';}
+function qualityHtml(){const ps=VCM.projects,n=ps.length||1,metrics=[['Mapped location',p=>p._lat!=null&&p._lon!=null],['District resolved',p=>!!p._district],['State resolved',p=>!!p._state],['Methodology recorded',p=>!!get(p,'methodology')],['Developer recorded',p=>!!get(p,'developer')],['First vintage recorded',p=>p._vintage!=null],['Issued-credit data',p=>p._issued!=null]];return '<div class="insight-card full"><h3>Data quality & coverage</h3><p class="card-note">Coverage describes what is available in the public project inventory. It is not a quality rating of individual carbon projects.</p>'+metrics.map(([name,fn])=>{const c=ps.filter(fn).length,pct=100*c/n;return '<div class="quality-meter"><span>'+esc(name)+'</span><span class="bar"><i style="width:'+pct.toFixed(1)+'%"></i></span><b>'+pct.toFixed(1)+'%</b></div>';}).join('')+'<div class="ws-actions" style="margin-top:12px"><a class="btn" href="'+sitePath('data/data_dictionary.json')+'" target="_blank">Data dictionary</a><a class="btn" href="'+sitePath('schema/vcm-project.schema.json')+'" target="_blank">JSON Schema</a></div></div>';}
+function renderInsights(){const root=$('#insightsRoot');if(!root)return;document.querySelectorAll('[data-insight]').forEach(b=>b.classList.toggle('on',b.dataset.insight===VCM.workspace.insight));if(VCM.workspace.insight==='compare'){root.innerHTML='<div class="insight-grid">'+renderComparison()+'</div>';root.querySelectorAll('[data-remove-compare]').forEach(b=>b.onclick=()=>{VCM.workspace.compareIds.delete(b.dataset.removeCompare);renderInsights();});return;}if(VCM.workspace.insight==='quality'){root.innerHTML='<div class="insight-grid">'+qualityHtml()+'</div>';return;}const kind=VCM.workspace.insight,rows=profileRows(kind);root.innerHTML='<div class="insight-grid"><div class="insight-card full"><h3>'+(kind==='methodologies'?'Methodology explorer':'Developer / entity explorer')+'</h3><p class="card-note">Click an entry for its project portfolio and cross-linked analysis.</p><div class="intel-list">'+rows.slice(0,120).map(([name,count])=>'<div class="intel-row"><button data-group="'+esc(name)+'">'+esc(name)+'</button><small>'+fmtInt(count)+' projects</small></div>').join('')+'</div></div></div>';root.querySelectorAll('[data-group]').forEach(b=>b.onclick=()=>openGroup(kind,b.dataset.group));}
+function initInsights(){document.querySelectorAll('[data-insight]').forEach(b=>b.onclick=()=>{VCM.workspace.insight=b.dataset.insight;renderInsights();});renderInsights();}
+PANEL_INIT.insights={fn:initInsights,refresh:renderInsights};
+
+
+/* ---------- Restored connected chart system -------------------------------- */
+let chartGeoLevel='state', chartGeoView='map';
+function chartCard(id,title,subtitle,wide,controls){return '<article class="chart-card-r'+(wide?' wide':'')+'"><div class="chart-head-r"><div><h3>'+esc(title)+'</h3><p>'+esc(subtitle||'')+'</p></div><button class="chart-png" data-chart-png="'+id+'">PNG</button></div>'+(controls||'')+'<div class="chart-frame-r"><div class="chart-div-r" id="'+id+'"></div></div><div class="chart-foot-r" id="'+id+'Foot"></div></article>';}
+async function initCharts(){const root=$('#chartsRoot');root.innerHTML='<div class="state-block"><div class="spinner"></div><p>Loading charts…</p></div>';try{await loadScript(VCM.cfg.plotlyUrl);}catch(e){root.innerHTML='<div class="state-block"><h4>Charts unavailable</h4><p>The data remains available in Data.</p></div>';return;}root.innerHTML='<div class="page-head"><span class="eyebrow">Market structure</span><h1>Charts</h1><p>Every figure responds to the active filters. Click connected charts to carry a subset into Data.</p></div><div id="chartSubsetBanner"></div><div class="chart-grid-restored">'+chartCard('rchRegistry','Projects by registry','Project count by voluntary registry.',false,'')+chartCard('rchStatus','Project status','Current public status distribution.',false,'')+chartCard('rchSubtype','Project subtype breakdown','Click a category or subtype to view those projects in Data.',false,'')+chartCard('rchCredits','Credits issued vs retired','Registry-level credit activity.',false,'')+chartCard('rchGeo','Geographic Distribution','Map or leaderboard by state/district. Click a geography to inspect projects.',true,'<div class="chart-controls-r"><button class="on" data-geoview="map">Map</button><button data-geoview="bar">Leaderboard</button><button class="on" data-geolevel="state">State</button><button data-geolevel="district">District</button></div>')+chartCard('rchVintage','Projects by First Vintage Year','Stacked by category. Click a segment to filter by year, category or both.',true,'')+chartCard('rchEmissions','Emissions Estimate Comparison','Divergence is calculated only where paired annual estimates are available.',false,'')+chartCard('rchLoc','Geographic locatability','Share of registry projects with a resolved mappable location.',false,'')+'</div>';document.querySelectorAll('[data-geoview]').forEach(b=>b.onclick=()=>{chartGeoView=b.dataset.geoview;document.querySelectorAll('[data-geoview]').forEach(x=>x.classList.toggle('on',x.dataset.geoview===chartGeoView));drawRestoredCharts();});document.querySelectorAll('[data-geolevel]').forEach(b=>b.onclick=async()=>{chartGeoLevel=b.dataset.geolevel;document.querySelectorAll('[data-geolevel]').forEach(x=>x.classList.toggle('on',x.dataset.geolevel===chartGeoLevel));if(chartGeoLevel==='district'&&!BOUNDARY_CACHE.district){try{await ensureBoundary('district');}catch(e){}}drawRestoredCharts();});document.querySelectorAll('[data-chart-png]').forEach(b=>b.onclick=()=>downloadChartPng(b.dataset.chartPng));drawRestoredCharts();}
+function setChartSubset(list,label){VCM.workspace.spatialIds=new Set(list.map(p=>p._id));VCM.cache.dirty=true;invalidate();const host=$('#chartSubsetBanner');if(host)host.innerHTML='<div class="subset-banner"><span><b>'+fmtInt(list.length)+'</b> projects selected: '+esc(label)+'</span><button id="clearChartSubset">Clear subset</button></div>';$('#clearChartSubset')?.addEventListener('click',()=>{VCM.workspace.spatialIds=null;VCM.cache.dirty=true;invalidate();drawRestoredCharts();});showTab('data');}
+async function downloadChartPng(id){if(typeof Plotly==='undefined')return;try{const url=await Plotly.toImage(id,{format:'png',width:id==='rchGeo'||id==='rchVintage'?1100:900,height:id==='rchGeo'?1100:700,scale:1});const img=new Image();img.onload=()=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height;const x=c.getContext('2d');x.drawImage(img,0,0);const text='indiavcm.com';x.font='600 18px Arial';const w=x.measureText(text).width+24;x.fillStyle='rgba(255,255,255,.9)';x.fillRect(c.width-w-14,c.height-44,w,30);x.fillStyle='#373f51';x.fillText(text,c.width-w-2,c.height-22);const a=document.createElement('a');a.download='india-vcm-'+id+'.png';a.href=c.toDataURL('image/png');a.click();};img.src=url;}catch(e){toast('Figure export failed.');}}
+function drawRestoredCharts(){if(typeof Plotly==='undefined'||!$('#rchRegistry'))return;const P=filtered(),layout=extra=>plotlyLayout(Object.assign({automargin:true},extra||{}));const count=(list,fn)=>{const m=new Map();list.forEach(p=>{const k=fn(p);if(k)m.set(k,(m.get(k)||0)+1)});return [...m.entries()].sort((a,b)=>b[1]-a[1]);};
+ const regs=count(P,p=>p._registry);Plotly.react('rchRegistry',[{type:'bar',x:regs.map(x=>x[0]),y:regs.map(x=>x[1]),marker:{color:regs.map(x=>REGISTRY_COLORS[x[0]]||FALLBACK_COLOR)},hovertemplate:'%{x}<br>%{y} projects<extra></extra>'}],layout({margin:{l:52,r:18,t:8,b:54}}),PLOTLY_CFG);
+ const sts=count(P,p=>p._status).slice(0,14).reverse();Plotly.react('rchStatus',[{type:'bar',orientation:'h',y:sts.map(x=>x[0]),x:sts.map(x=>x[1]),marker:{color:'#6b7f99'},hovertemplate:'%{y}<br>%{x} projects<extra></extra>'}],layout({margin:{l:155,r:18,t:8,b:40}}),PLOTLY_CFG);
+ const scopes=count(P,p=>p._scope);let labels=[],parents=[],values=[],ids=[],colors=[];scopes.forEach(([sc,n])=>{labels.push(sc);parents.push('');values.push(n);ids.push(sc);colors.push(SCOPE_COLORS[sc]||FALLBACK_COLOR);const sub=count(P.filter(p=>p._scope===sc),p=>String(get(p,'type')||'Unspecified'));sub.slice(0,20).forEach(([su,c])=>{labels.push(su);parents.push(sc);values.push(c);ids.push(sc+'||'+su);colors.push(SCOPE_COLORS[sc]||FALLBACK_COLOR);});});Plotly.react('rchSubtype',[{type:'treemap',labels,parents,values,ids,marker:{colors},branchvalues:'total',hovertemplate:'%{label}<br>%{value} projects<extra></extra>'}],layout({margin:{l:4,r:4,t:4,b:4}}),PLOTLY_CFG).then(()=>{const el=$('#rchSubtype');el.removeAllListeners?.('plotly_click');el.on?.('plotly_click',ev=>{const id=ev.points?.[0]?.id||'';const [sc,su]=id.split('||');const list=P.filter(p=>p._scope===sc&&(!su||String(get(p,'type')||'Unspecified')===su));setChartSubset(list,su?sc+' · '+su:sc);});});
+ const cred=regs.map(([r])=>[r,P.filter(p=>p._registry===r).reduce((s,p)=>s+(p._issued||0),0),P.filter(p=>p._registry===r).reduce((s,p)=>s+(p._retired||0),0)]);Plotly.react('rchCredits',[{type:'bar',name:'Issued',x:cred.map(x=>x[0]),y:cred.map(x=>x[1]),marker:{color:'#58a4b0'}},{type:'bar',name:'Retired',x:cred.map(x=>x[0]),y:cred.map(x=>x[2]),marker:{color:'#daa49a'}}],layout({barmode:'group',showlegend:true,legend:{orientation:'h',y:-.18,x:.5,xanchor:'center'},margin:{l:64,r:18,t:8,b:78}}),PLOTLY_CFG);
+ drawGeoChart(P);
+ const years=[...new Set(P.map(p=>p._vintage).filter(Number.isFinite))].sort((a,b)=>a-b),scopeNames=[...new Set(P.map(p=>p._scope).filter(Boolean))];const traces=scopeNames.map(sc=>({type:'bar',name:sc,x:years,y:years.map(y=>P.filter(p=>p._vintage===y&&p._scope===sc).length),marker:{color:SCOPE_COLORS[sc]||FALLBACK_COLOR},customdata:years.map(y=>[y,sc]),hovertemplate:'%{x}<br>'+sc+': %{y} projects<extra></extra>'}));Plotly.react('rchVintage',traces,layout({barmode:'stack',showlegend:true,legend:{orientation:'h',y:-.23,x:.5,xanchor:'center'},margin:{l:52,r:18,t:8,b:112}}),PLOTLY_CFG).then(()=>{const el=$('#rchVintage');el.removeAllListeners?.('plotly_click');el.on?.('plotly_click',ev=>{const pt=ev.points?.[0],year=pt?.x,sc=pt?.data?.name;if(!year||!sc)return;openModal('Filter vintage projects','<p>Choose how to use <b>'+esc(year)+'</b> · <b>'+esc(sc)+'</b>.</p><div class="ws-actions"><button class="btn" id="vBoth">Year + category</button><button class="btn" id="vYear">Year only</button><button class="btn" id="vScope">Category only</button></div>');setTimeout(()=>{$('#vBoth').onclick=()=>setChartSubset(P.filter(p=>p._vintage==year&&p._scope===sc),year+' · '+sc);$('#vYear').onclick=()=>setChartSubset(P.filter(p=>p._vintage==year),'Vintage '+year);$('#vScope').onclick=()=>setChartSubset(P.filter(p=>p._scope===sc),sc);},0);});});
+ const comparable=P.filter(p=>p.emissions_disagreement_tier&&p.emissions_disagreement_tier!=='not_comparable'),tiers=['none','minor','major','extreme'],tierLabels={none:'No material divergence (<1%)',minor:'Minor (1–<10%)',major:'Major (10–100%)',extreme:'Extreme (>100%)'},tierColors={none:'#58a4b0',minor:'#a9bcd0',major:'#daa49a',extreme:'#b5605a'},vals=tiers.map(t=>comparable.filter(p=>p.emissions_disagreement_tier===t).length);Plotly.react('rchEmissions',[{type:'pie',hole:.58,labels:tiers.map(t=>tierLabels[t]),values:vals,marker:{colors:tiers.map(t=>tierColors[t])},textinfo:'none',hovertemplate:'%{label}<br>%{value} projects (%{percent})<extra></extra>'}],layout({showlegend:false,margin:{l:16,r:16,t:18,b:18},annotations:[{text:'<b>'+fmtInt(comparable.length)+'</b><br><span style="font-size:10px">comparable</span>',showarrow:false,font:{size:17}}]}),PLOTLY_CFG);const foot=$('#rchEmissionsFoot');if(foot){foot.innerHTML='<div class="emissions-legend">'+tiers.map((t,i)=>'<span><i style="background:'+tierColors[t]+'"></i>'+esc(tierLabels[t])+' · '+fmtInt(vals[i])+'</span>').join('')+'</div><div style="margin-top:8px">Comparison coverage: <b>'+fmtInt(comparable.length)+'</b> of <b>'+fmtInt(P.length)+'</b> projects ('+(P.length?100*comparable.length/P.length:0).toFixed(1)+'%) have paired annual estimates. '+fmtInt(P.length-comparable.length)+' are not comparable because one or both estimates are unavailable.</div>';}
+ const locRegs=regs.map(([r])=>{const all=P.filter(p=>p._registry===r),m=all.filter(p=>p._lat!=null&&p._lon!=null).length;return[r,all.length?100*m/all.length:0,m,all.length-m]});Plotly.react('rchLoc',[{type:'bar',orientation:'h',y:locRegs.map(x=>x[0]),x:locRegs.map(x=>x[1]),marker:{color:locRegs.map(x=>REGISTRY_COLORS[x[0]]||FALLBACK_COLOR)},text:locRegs.map(x=>x[1].toFixed(1)+'%'),textposition:'inside',customdata:locRegs.map(x=>[x[2],x[3]]),hovertemplate:'%{y}: %{x:.1f}%<br>Mapped %{customdata[0]} · Unlocated %{customdata[1]}<extra></extra>'}],layout({xaxis:{range:[0,100],title:'Mapped (%)'},margin:{l:90,r:18,t:8,b:58}}),PLOTLY_CFG);
+}
+async function drawGeoChart(P){const foot=$('#rchGeoFoot');if(chartGeoView==='bar'){const rows=countGeo(P,chartGeoLevel).slice(0,30).reverse();Plotly.react('rchGeo',[{type:'bar',orientation:'h',y:rows.map(x=>x[0]),x:rows.map(x=>x[1]),marker:{color:'#58a4b0'},hovertemplate:'%{y}<br>%{x} projects<extra></extra>'}],plotlyLayout({margin:{l:220,r:20,t:8,b:50}}),PLOTLY_CFG).then(()=>{const el=$('#rchGeo');el.removeAllListeners?.('plotly_click');el.on?.('plotly_click',ev=>{const name=ev.points?.[0]?.y;const list=P.filter(p=>chartGeoLevel==='state'?p._state===name:((p._district||'')+', '+(p._state||''))===name);setChartSubset(list,name);});});if(foot)foot.textContent='Leaderboard shows the top 30 matched geographies.';return;}let gj=BOUNDARY_CACHE[chartGeoLevel];if(!gj){try{gj=await ensureBoundary(chartGeoLevel);}catch(e){if(foot)foot.textContent='Boundary layer unavailable.';return;}}const rows=countGeo(P,chartGeoLevel),agg=Object.fromEntries(rows);if(chartGeoLevel==='state'){const loc=gj.features.map(f=>String((f.properties||{}).state||'')),z=loc.map(x=>agg[x]||0);Plotly.react('rchGeo',[{type:'choropleth',geojson:gj,featureidkey:'properties.state',locations:loc,z,colorscale:[[0,'#f4f6f8'],[.2,'#d9e9ed'],[.55,'#91c3cc'],[1,'#3d7f8a']],marker:{line:{color:'#ffffff',width:.5}},colorbar:{title:'Projects',thickness:12,len:.7},hovertemplate:'%{location}<br>%{z} projects<extra></extra>'}],{geo:{fitbounds:'geojson',visible:false,bgcolor:'rgba(0,0,0,0)'},margin:{l:0,r:0,t:0,b:15},paper_bgcolor:'rgba(0,0,0,0)'} ,PLOTLY_CFG).then(()=>{const el=$('#rchGeo');el.removeAllListeners?.('plotly_click');el.on?.('plotly_click',ev=>{const name=ev.points?.[0]?.location;setChartSubset(P.filter(p=>p._state===name),name);});});}else{const fc=JSON.parse(JSON.stringify(gj));fc.features.forEach(f=>{const pr=f.properties||{};pr._id=(pr.district||'')+', '+(pr.state||'');f.properties=pr;});const loc=fc.features.map(f=>f.properties._id),z=loc.map(x=>agg[x]||0);Plotly.react('rchGeo',[{type:'choropleth',geojson:fc,featureidkey:'properties._id',locations:loc,z,colorscale:[[0,'#f4f6f8'],[.2,'#d9e9ed'],[.55,'#91c3cc'],[1,'#3d7f8a']],marker:{line:{color:'#ffffff',width:.25}},colorbar:{title:'Projects',thickness:12,len:.7},hovertemplate:'%{location}<br>%{z} projects<extra></extra>'}],{geo:{fitbounds:'geojson',visible:false,bgcolor:'rgba(0,0,0,0)'},margin:{l:0,r:0,t:0,b:15},paper_bgcolor:'rgba(0,0,0,0)'},PLOTLY_CFG).then(()=>{const el=$('#rchGeo');el.removeAllListeners?.('plotly_click');el.on?.('plotly_click',ev=>{const name=ev.points?.[0]?.location;setChartSubset(P.filter(p=>((p._district||'')+', '+(p._state||''))===name),name);});});}if(foot)foot.textContent='Administrative polygons with zero matched projects remain unfilled; click a geography to inspect its projects.';}
+function countGeo(P,level){const m=new Map();P.forEach(p=>{const k=level==='state'?p._state:(p._district&&p._state?p._district+', '+p._state:null);if(k)m.set(k,(m.get(k)||0)+1)});return [...m.entries()].sort((a,b)=>b[1]-a[1]);}
+function drawCharts(){drawRestoredCharts();}
+
+/* ---------- Public-facing About copy -------------------------------------- */
+function initAbout(){const m=VCM.meta||{};$('#aboutRoot').innerHTML='<div class="page-head"><span class="eyebrow">Open market intelligence</span><h1>About India VCM Explorer</h1><p>India VCM Explorer is an open-access geospatial market intelligence platform for India’s voluntary carbon market (VCM) and carbon offset projects.</p></div><div class="grid cols-2"><div class="card"><h3>Explore India’s voluntary carbon market</h3><p class="card-note">Search and analyze voluntary carbon market projects across India by registry, category, methodology, developer, state, district, vintage, issuance and retirement activity. Project locations are accompanied by provenance so approximate administrative locations are not presented as surveyed sites.</p></div><div class="card"><h3>Analysis Workspace</h3><p class="card-note">The desktop Workspace lets users control location-quality classes, hide individual points, select areas, add private local GIS layers and export reproducible project subsets. Local files are processed in the browser and are not uploaded to India VCM Explorer.</p></div><div class="card"><h3>Search and connected analysis</h3><p class="card-note">Choose Project title, Title + description or All metadata. Boolean operators AND, OR, NOT, quoted phrases, parentheses and field-qualified searches such as <code>state:Gujarat</code> or <code>title:"wind power"</code> are supported. Connected chart selections can be carried directly into Data and exports.</p></div><div class="card"><h3>Open data</h3><p class="card-note">Filtered data can be downloaded as CSV or GeoJSON, while the Analysis Bundle packages the active subset with filter metadata and a publication-ready map when browser export is available.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn" href="'+sitePath('data/vcm_data.csv')+'" download>CSV</a><a class="btn" href="'+sitePath('data/vcm_data.geojson')+'" download>GeoJSON</a><a class="btn" href="'+sitePath('data/data_dictionary.json')+'" target="_blank">Data dictionary</a></div></div></div><div class="card"><h3>Data sources and interpretation</h3><p class="card-note">The project universe is based on the Berkeley Carbon Trading Project voluntary registry offsets database and is enriched with public registry information where available. Geographic precision differs across projects; the map and project details identify whether a location comes from registry/site geometry, a corrected coordinate, or an administrative-level approximation. Broad or unsupported locations remain unmapped rather than being assigned false precision.</p><p class="card-note"><b>Dataset build:</b> '+esc(m.build_date||'—')+' · <b>Registry release:</b> '+esc(m.bctp_version||'—')+'.</p></div><div class="card"><h3>Reuse and citation</h3><p class="card-note">The public dataset is provided for open research and market intelligence. Suggested citation: '+esc(VCM.cfg.author||'')+', <em>India VCM Explorer</em>, '+esc(m.build_date||'')+', '+esc(VCM.cfg.siteUrl||'')+'.</p>'+(VCM.cfg.authorUrl?'<p><a href="'+esc(VCM.cfg.authorUrl)+'" target="_blank" rel="noopener">Contact the maintainer</a></p>':'')+'</div>';}
+function ensureNews(){if(!VCM.cfg.enableNews)return Promise.resolve(null);return Promise.all([fetch((VCM.cfg.newsBase||'').replace(/\/$/,'')+'/news.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch((VCM.cfg.newsBase||'').replace(/\/$/,'')+'/news_meta.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([feed,meta])=>{VCM.news=feed&&Array.isArray(feed.items)?feed.items:null;VCM.newsMeta=meta;return VCM.news;});}
+
+function initRestoredLayer(){document.body.classList.toggle('news-disabled',!VCM.cfg.enableNews);window.__VCM_RAW_FEATURES__=window.__VCM_RAW_FEATURES__||[];VCM.projects.forEach(p=>p._locationClass=locationClass(p));initSearchScopes();initWorkspace();const ms=$('#mapSearch');if(ms&&VCM.filters.q)ms.value=VCM.filters.q;const ds=$('#dataSearchScope');if(ds)ds.value=VCM.filters.searchScope;const qs=$('#mapSearchScope');if(qs)qs.value=VCM.filters.searchScope;updateWorkspaceSummary();}
+(function waitRestored(){let n=0;const t=setInterval(()=>{n++;if(VCM.projects.length&&MAP){clearInterval(t);initRestoredLayer();}else if(n>300)clearInterval(t);},40);})();
+
+/* ==========================================================================\n   v9.2 — live news intelligence + cross-platform relationships\n   ========================================================================== */
+VCM.view.newsCategory = VCM.view.newsCategory || 'all';
+
+function newsBases(){
+  const arr=[];
+  [VCM.cfg.newsBase,VCM.cfg.newsFallbackBase].forEach(x=>{if(x){x=String(x).replace(/\/+$/,'')+'/';if(!arr.includes(x))arr.push(x);}});
+  return arr;
+}
+async function fetchNewsBase(base){
+  const fr=await fetch(base+'news.json',{cache:'no-cache'});if(!fr.ok)throw new Error('news.json '+fr.status);
+  const feed=await fr.json();let meta=null;try{const mr=await fetch(base+'news_meta.json',{cache:'no-cache'});if(mr.ok)meta=await mr.json();}catch(e){}
+  return [feed,meta];
+}
+function ensureNews(){
+  if(!VCM.cfg.enableNews)return Promise.resolve(null);
+  if(NEWS_LOADED)return NEWS_LOADED;
+  NEWS_LOADED=(async()=>{
+    let lastErr=null;
+    for(const base of newsBases()){
+      try{
+        const [feed,meta]=await fetchNewsBase(base);
+        if(feed&&Array.isArray(feed.items)){
+          VCM.news=feed.items;VCM.newsMeta=meta;VCM.newsBaseUsed=base;
+          const n=newsInWindow(30).length,badge=$('#newsCount'),tick=$('#relNews');
+          if(badge){badge.textContent=n;badge.hidden=n===0;}if(tick)tick.textContent=fmtInt(n);
+          populateNewsCategories();return VCM.news;
+        }
+      }catch(e){lastErr=e;}
+    }
+    VCM.news=null;VCM.newsError=lastErr?String(lastErr):'feed unavailable';const tick=$('#relNews');if(tick)tick.textContent='—';return null;
+  })();
+  return NEWS_LOADED;
+}
+function populateNewsCategories(){
+  const sel=$('#newsCategory');if(!sel||!VCM.news)return;
+  const current=VCM.view.newsCategory||'all';
+  const cats=[...new Set(VCM.news.map(n=>n.category).filter(Boolean))].sort();
+  sel.innerHTML='<option value="all">All categories</option>'+cats.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join('');
+  sel.value=cats.includes(current)?current:'all';
+  if(!sel.dataset.bound){sel.dataset.bound='1';sel.addEventListener('change',()=>{VCM.view.newsCategory=sel.value;renderNews();});}
+}
+function newsVisible(){
+  let rows=newsInWindow(VCM.view.newsWindow);
+  if(VCM.view.newsMappedOnly)rows=rows.filter(n=>n.geo&&n.geo.lat!=null&&n.geo.lon!=null);
+  if(VCM.view.newsCategory&&VCM.view.newsCategory!=='all')rows=rows.filter(n=>(n.category||'Other')===VCM.view.newsCategory);
+  return rows;
+}
+
+function newsRelationForProject(n,p){
+  const e=n.entities||{},g=n.geo||{},dev=String(get(p,'developer')||''),meth=String(get(p,'methodology')||'');
+  if((e.projects||[]).map(String).includes(String(p._id)))return {rank:5,label:'Direct project',cls:'direct'};
+  if(dev&&(e.developers||[]).some(x=>String(x).toLowerCase()===dev.toLowerCase()))return {rank:4,label:'Developer',cls:'direct'};
+  if(meth&&(e.methodologies||[]).some(x=>String(x).toLowerCase()===meth.toLowerCase()))return {rank:3,label:'Methodology',cls:'direct'};
+  if(g.district&&p._district&&String(g.district).toLowerCase()===String(p._district).toLowerCase())return {rank:2,label:'Same district',cls:'local'};
+  if(g.state&&p._state&&String(g.state).toLowerCase()===String(p._state).toLowerCase())return {rank:1,label:'Same state',cls:'local'};
+  return null;
+}
+function projectsForNews(n){
+  return VCM.projects.map(p=>[p,newsRelationForProject(n,p)]).filter(x=>x[1]).sort((a,b)=>b[1].rank-a[1].rank||(b[0]._issued||0)-(a[0]._issued||0)).map(x=>x[0]);
+}
+function newsRelationsForProject(p){
+  if(!VCM.news)return [];
+  return newsInWindow(90).map(n=>({n,rel:newsRelationForProject(n,p)})).filter(x=>x.rel).sort((a,b)=>b.rel.rank-a.rel.rank||Date.parse(b.n.published)-Date.parse(a.n.published));
+}
+// Suppress the old district-only section; the richer relationship panel is appended asynchronously below.
+function newsNearProject(p){return [];}
+
+const _openDetailV92Base=openDetail;
+openDetail=function(p){
+  _openDetailV92Base(p);
+  if(!VCM.cfg.enableNews)return;
+  ensureNews().then(()=>{
+    if(VCM.view.selected!==p._id||!VCM.news)return;
+    const rels=newsRelationsForProject(p).slice(0,6),body=$('#detailBody');if(!body||!rels.length)return;
+    const sec=document.createElement('div');sec.className='detail-section';
+    sec.innerHTML='<h4>Market signals & recent coverage</h4><div class="project-news-list">'+rels.map(({n,rel})=>'<div class="project-news-item"><div style="display:flex;justify-content:space-between;gap:8px;align-items:start"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.title)+'</a><span class="news-relation '+rel.cls+'">'+esc(rel.label)+'</span></div><div class="news-meta"><span class="news-source">'+esc(n.source)+'</span><span>'+relTime(n.published)+'</span>'+(n.category?'<span>'+esc(n.category)+'</span>':'')+'</div></div>').join('')+'</div>';
+    body.appendChild(sec);
+  });
+};
+
+function newsWorkspaceQuery(n){
+  const g=n.geo||{};if(g.district&&g.state)return 'district:"'+g.district+'" AND state:"'+g.state+'"';if(g.state)return 'state:"'+g.state+'"';return '';
+}
+function desktopWorkspaceUrl(n){
+  let base;if(location.hostname.endsWith('.github.io')){const parts=location.pathname.split('/').filter(Boolean);base=location.origin+'/'+(parts[0]==='indiavcm_mobile_test'?'indiavcm_test':(parts[0]||'indiavcm_test'))+'/';}else base='https://indiavcm.com/';
+  const q=new URLSearchParams({tab:'workspace'}),s=newsWorkspaceQuery(n);if(s){q.set('q',s);q.set('search','all');}return base+'?'+q.toString();
+}
+function analyzeNewsInWorkspace(n){
+  const list=projectsForNews(n);if(list.length)VCM.workspace.spatialIds=new Set(list.map(p=>p._id));VCM.cache.dirty=true;VCM.view.layers.news=true;
+  const nb=$('#segLayers button[data-v="news"]');if(nb)nb.setAttribute('aria-pressed','true');invalidate();drawNewsOverlay();showTab('workspace');
+  const g=n.geo||{};if(g.lat!=null&&g.lon!=null&&MAP)MAP.flyTo([g.lat,g.lon],g.level==='project'?10:g.level==='district'?8:6,{duration:.5});updateWorkspaceSummary();
+}
+function viewNewsProjects(n){VCM.workspace.spatialIds=new Set(projectsForNews(n).map(p=>p._id));VCM.cache.dirty=true;invalidate();showTab('data');}
+
+function newsMarker(n,latlng){
+  const lvl=(n.geo||{}).level||'unresolved',size=lvl==='project'?8:lvl==='district'?7:9,op=(lvl==='project'||lvl==='district')?.96:.62;
+  return L.marker(latlng,{icon:L.divIcon({className:'',html:'<span style="display:block;width:'+size+'px;height:'+size+'px;background:var(--blush);border:1.5px solid var(--blush-deep);transform:rotate(45deg);opacity:'+op+'"></span>',iconSize:[size,size],iconAnchor:[size/2,size/2]})});
+}
+
+function renderNews(){
+  populateNewsCategories();
+  const rows=newsVisible(),list=$('#newsItems');
+  if(!rows.length){list.innerHTML='<div class="state-block"><h4>Nothing in this view</h4><p>No matching coverage for this time/category filter.</p></div>';if(NEWS_MARKERS&&NEWS_MAP){NEWS_MAP.removeLayer(NEWS_MARKERS);NEWS_MARKERS=null;}return;}
+  list.innerHTML=rows.map((n,i)=>{const lvl=(n.geo&&n.geo.level)||'unresolved',place=n.geo&&(n.geo.district||n.geo.state),linked=projectsForNews(n).length;return '<button class="news-item" data-i="'+i+'"><div class="news-title">'+esc(n.title)+'</div><div class="news-meta"><span class="news-source">'+esc(n.source)+'</span><span>'+relTime(n.published)+'</span>'+(n.category?'<span>'+esc(n.category)+'</span>':'')+'<span class="geo-tag '+(lvl==='state'?'state':lvl==='unresolved'?'none':'')+'">'+esc(place||(lvl==='project'?'Project-linked':NEWS_LEVEL_LABEL[lvl]||lvl))+'</span>'+(linked?'<span>'+linked+' related project'+(linked===1?'':'s')+'</span>':'')+'</div></button>';}).join('');
+  $$('.news-item',list).forEach(el=>el.addEventListener('click',()=>{const n=rows[parseInt(el.dataset.i,10)];$$('.news-item',list).forEach(x=>x.setAttribute('aria-current','false'));el.setAttribute('aria-current','true');openNewsDetail(n);}));
+  plotNews(rows,NEWS_MAP);renderSourceHealth();
+}
+
+function openNewsDetail(n){
+  const linked=projectsForNews(n),geo=n.geo||{},ents=n.entities||{},mobile=document.body.classList.contains('mobile-site');
+  const entityBox=(title,arr)=>arr&&arr.length?'<div class="news-entity-box"><b>'+esc(title)+'</b><span>'+arr.slice(0,5).map(esc).join(' · ')+(arr.length>5?' · +'+(arr.length-5):'')+'</span></div>':'';
+  let placement=geo.level==='project'?'Direct project mention; placed at that project’s mapped point.':geo.level==='district'?'Matched to '+esc(geo.district)+' district, '+esc(geo.state)+'.':geo.level==='state'?'Matched to '+esc(geo.state)+' only; shown at a representative state point, not a specific site.':geo.level==='national'?'India-wide coverage with no specific place; not plotted.':'No place resolved; not plotted.';
+  let actions='<div class="news-detail-actions"><a class="btn btn-primary" href="'+esc(n.url)+'" target="_blank" rel="noopener">Read at '+esc(n.source)+'</a>';
+  if(linked.length)actions+='<button class="btn" id="newsViewProjects">View '+fmtInt(linked.length)+' related projects</button>';
+  if(linked.length)actions+=mobile?'<a class="btn" href="'+esc(desktopWorkspaceUrl(n))+'">Open full Workspace</a>':'<button class="btn" id="newsWorkspace">Analyze in Workspace</button>';
+  actions+='</div>';
+  const body='<p class="card-note">'+esc(n.source)+' · '+fmtDate(n.published)+(n.category?' · '+esc(n.category):'')+'</p>'+(n.summary?'<p>'+esc(String(n.summary).slice(0,420))+(String(n.summary).length>420?'…':'')+'</p>':'')+actions+'<div class="card"><h3>Why this signal is connected</h3><p class="card-note">'+placement+(geo.method?' Method: <code>'+esc(geo.method)+'</code>.':'')+(geo.confidence?' Confidence: '+esc(geo.confidence)+'.':'')+'</p><div class="news-entity-grid">'+entityBox('Direct projects',ents.projects)+entityBox('Developers',ents.developers)+entityBox('Methodologies',ents.methodologies)+entityBox('Registries',ents.registries)+'</div></div>'+(linked.length?'<div class="card"><h3>Related India VCM projects</h3><p class="card-note">Direct project/developer/methodology relationships rank above geographic proximity.</p><div class="intel-list">'+linked.slice(0,10).map(p=>{const r=newsRelationForProject(n,p);return '<div class="intel-row"><button data-news-project="'+esc(p._id)+'">'+esc(p._name)+'</button><small><span class="news-relation '+(r?r.cls:'')+'">'+esc(r?r.label:'Related')+'</span> '+fmtCompact(p._issued)+'</small></div>';}).join('')+'</div></div>':'');
+  openModal(n.title,body);
+  setTimeout(()=>{const vw=$('#newsViewProjects');if(vw)vw.onclick=()=>viewNewsProjects(n);const ws=$('#newsWorkspace');if(ws)ws.onclick=()=>analyzeNewsInWorkspace(n);document.querySelectorAll('[data-news-project]').forEach(b=>b.onclick=()=>{const p=VCM.projects.find(x=>x._id===b.dataset.newsProject);if(p){document.querySelector('.modal-backdrop')?.remove();showTab('map');openDetail(p);}});},0);
+}
+
+const _openGroupV92Base=openGroup;
+openGroup=function(kind,name){
+  _openGroupV92Base(kind,name);if(!VCM.cfg.enableNews)return;
+  ensureNews().then(()=>{if(!VCM.news)return;const key=kind==='methodologies'?'methodologies':'developers';const rows=newsInWindow(90).filter(n=>((n.entities||{})[key]||[]).some(x=>String(x).toLowerCase()===String(name).toLowerCase())).slice(0,6);if(!rows.length)return;const modal=[...document.querySelectorAll('.modal-backdrop .modal')].pop();const host=modal?.lastElementChild;if(host)host.insertAdjacentHTML('beforeend','<div class="card" style="margin-top:14px"><h3>Recent related coverage</h3><div class="project-news-list">'+rows.map(n=>'<div class="project-news-item"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.title)+'</a><div class="news-meta"><span class="news-source">'+esc(n.source)+'</span><span>'+relTime(n.published)+'</span></div></div>').join('')+'</div></div>');});
+};
+
+const _initRestoredLayerV92=initRestoredLayer;
+initRestoredLayer=function(){_initRestoredLayerV92();if(VCM.cfg.enableNews)ensureNews();};
 
 </script>
 </body>

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://indiavcm.com/schema/news-feed.schema.json",
   "title": "India VCM Explorer news feed (news.json)",
-  "description": "Contract between the indiavcm-news pipeline and this site. Headlines, sources, timestamps and links only — never article text.",
+  "description": "Contract between the indiavcm_news scheduled pipeline and India VCM Explorer. Headlines, publisher attribution, RSS snippets, timestamps and outbound links only — never republished article text.",
   "type": "object",
   "required": [
     "schema_version",
@@ -11,11 +11,13 @@
   ],
   "properties": {
     "schema_version": {
-      "const": 1
+      "const": 2
     },
     "generated_at": {
-      "type": "string",
-      "format": "date-time"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "window_days": {
       "type": "integer"
@@ -34,41 +36,88 @@
         ],
         "properties": {
           "id": {
-            "type": "string",
-            "description": "Stable hash of the canonical URL."
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
           },
           "title": {
             "type": "string"
           },
           "url": {
-            "type": "string",
-            "format": "uri"
+            "type": "string"
           },
           "source": {
-            "type": "string",
-            "description": "Publisher name, for attribution."
+            "type": "string"
           },
           "published": {
-            "type": "string",
-            "format": "date-time"
+            "type": "string"
           },
           "summary": {
-            "type": "string",
-            "description": "Short RSS-supplied snippet. Optional."
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relevance_score": {
+            "type": "number"
+          },
+          "entities": {
+            "type": "object",
+            "properties": {
+              "projects": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "developers": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "methodologies": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "registries": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "geo": {
             "type": "object",
             "required": [
               "level",
-              "method"
+              "method",
+              "confidence"
             ],
             "properties": {
               "level": {
                 "enum": [
+                  "project",
                   "district",
                   "state",
                   "national",
                   "unresolved"
+                ]
+              },
+              "project_id": {
+                "type": [
+                  "string",
+                  "null"
                 ]
               },
               "district": {
@@ -96,8 +145,7 @@
                 ]
               },
               "method": {
-                "type": "string",
-                "description": "gazetteer_exact | gazetteer_alias | state_only | none"
+                "type": "string"
               },
               "confidence": {
                 "enum": [
@@ -106,12 +154,6 @@
                   "low"
                 ]
               }
-            }
-          },
-          "terms": {
-            "type": "array",
-            "items": {
-              "type": "string"
             }
           }
         }
